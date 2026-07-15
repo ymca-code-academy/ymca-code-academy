@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Create your first Scratch animation using sprites, motion blocks, events, costumes, and the stage with YMCA Code Academy."
+    >
+
+    <title>
+        Scratch Lesson 1: Your First Animation
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lesson-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                YMCA <span>Code Academy</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="learn.html" class="active-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="challenge.html">
+                        Code Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Student Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Lesson Hero -->
+        <section class="lesson-hero">
+
+            <div class="lesson-hero-grid"></div>
+
+            <div class="lesson-hero-glow lesson-glow-one"></div>
+            <div class="lesson-hero-glow lesson-glow-two"></div>
+
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <nav
+                    class="lesson-breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="learn.html">
+                        Learn
+                    </a>
+
+                    <span>→</span>
+
+                    <a href="learn.html#scratch-lessons">
+                        Scratch
+                    </a>
+
+                    <span>→</span>
+
+                    <p>Lesson 1</p>
+
+                </nav>
+
+                <div class="lesson-hero-layout">
+
+                    <div class="lesson-hero-copy">
+
+                        <div class="lesson-hero-labels">
+
+                            <span class="lesson-course-label">
+                                Scratch
+                            </span>
+
+                            <span class="lesson-level-label">
+                                Beginner
+                            </span>
+
+                            <span class="lesson-time-label">
+                                30–40 Minutes
+                            </span>
+
+                        </div>
+
+                        <p class="lesson-number-label">
+                            Scratch Lesson 01
+                        </p>
+
+                        <h1>
+                            Create Your First
+                            <span>Scratch Animation</span>
+                        </h1>
+
+                        <p class="lesson-hero-description">
+                            Choose a character, connect colorful blocks,
+                            move across the stage, change costumes, and
+                            bring your first Scratch scene to life.
+                        </p>
+
+                        <div class="lesson-hero-actions">
+
+                            <a
+                                href="#lesson-start"
+                                class="button button-primary lesson-start-button"
+                            >
+                                Start Lesson
+                                <span>↓</span>
+                            </a>
+
+                            <a
+                                href="learn.html"
+                                class="lesson-back-link"
+                            >
+                                ← Return to Lessons
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Scratch Block Preview -->
+                    <div class="lesson-hero-code">
+
+                        <div class="lesson-code-window">
+
+                            <div class="lesson-code-top">
+
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <p>first_animation.sb3</p>
+
+                            </div>
+
+                            <div class="lesson-code-body">
+
+                                <p>
+                                    <span class="code-comment">
+                                        Event
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when green flag clicked
+                                    </span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-function">
+                                        move 10 steps
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        glide 1 second
+                                    </span>
+
+                                    <span class="code-variable">
+                                        to random position
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-string">
+                                        say "Hello!" for 2 seconds
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-number">
+                                        next costume
+                                    </span>
+                                </p>
+
+                            </div>
+
+                            <div class="lesson-code-output">
+
+                                <p>
+                                    <span>▶</span>
+                                    Animation Result
+                                </p>
+
+                                <strong>
+                                    The sprite moves across the stage.
+                                </strong>
+
+                                <strong>
+                                    The sprite speaks and changes costume.
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Progress Navigation -->
+        <section class="lesson-progress-bar">
+
+            <div class="container lesson-progress-layout">
+
+                <a
+                    href="#lesson-start"
+                    class="progress-item active-progress"
+                >
+                    <span>01</span>
+                    <p>Overview</p>
+                </a>
+
+                <a
+                    href="#presentation"
+                    class="progress-item"
+                >
+                    <span>02</span>
+                    <p>Presentation</p>
+                </a>
+
+                <a
+                    href="#lesson-vocabulary"
+                    class="progress-item"
+                >
+                    <span>03</span>
+                    <p>Vocabulary</p>
+                </a>
+
+                <a
+                    href="#sprites-stage"
+                    class="progress-item"
+                >
+                    <span>04</span>
+                    <p>Sprites</p>
+                </a>
+
+                <a
+                    href="#blocks-events"
+                    class="progress-item"
+                >
+                    <span>05</span>
+                    <p>Blocks</p>
+                </a>
+
+                <a
+                    href="#practice"
+                    class="progress-item"
+                >
+                    <span>06</span>
+                    <p>Practice</p>
+                </a>
+
+                <a
+                    href="#mini-challenge"
+                    class="progress-item"
+                >
+                    <span>07</span>
+                    <p>Challenge</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Overview -->
+        <section
+            class="section lesson-overview-section"
+            id="lesson-start"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lesson Overview
+                        </p>
+
+                        <h2>
+                            What will you learn?
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        By the end of this lesson, you will be able to
+                        select a sprite, use the Scratch stage, connect
+                        blocks, start code with an event, and build a
+                        short animation.
+                    </p>
+
+                </div>
+
+                <div class="lesson-goal-grid">
+
+                    <article class="lesson-goal-card goal-card-red">
+
+                        <div class="lesson-goal-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Understand the Workspace
+                        </h3>
+
+                        <p>
+                            Identify the stage, sprites, block menu,
+                            coding area, and green flag.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-purple">
+
+                        <div class="lesson-goal-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Connect Blocks
+                        </h3>
+
+                        <p>
+                            Drag blocks into the coding area and connect
+                            them in the order they should run.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-blue">
+
+                        <div class="lesson-goal-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Build an Animation
+                        </h3>
+
+                        <p>
+                            Combine motion, looks, events, and costumes
+                            to create an animated scene.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <aside class="before-you-begin">
+
+                    <div class="before-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p class="before-label">
+                            Before You Begin
+                        </p>
+
+                        <h3>
+                            You do not need any coding experience.
+                        </h3>
+
+                        <p>
+                            Scratch uses colorful blocks instead of
+                            typed commands. Experiment with the blocks,
+                            test your project often, and do not worry
+                            about making mistakes.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Presentation and Learning Guide -->
+        <section
+            class="section lesson-media-section"
+            id="presentation"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Learn the Lesson
+                        </p>
+
+                        <h2>
+                            Review the slides and follow along.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Study the original Scratch class presentation
+                        before completing the examples and activities.
+                    </p>
+
+                </div>
+
+                <div class="lesson-media-grid">
+
+                    <!-- Presentation -->
+                    <article class="lesson-media-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon presentation-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Lesson Slides
+                                </p>
+
+                                <h3>
+                                    Class Presentation
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="embedded-presentation">
+
+                            <iframe
+                                src="https://docs.google.com/presentation/d/e/2PACX-1vQDk1Tmli5KmFU1YphNnTG228BqXj-AO6i4NQlEhf6UakWPfzHEFdIlDT3-636JvjxcsmabYlDo2bet/pubembed?start=false&loop=false&delayms=3000"
+                                frameborder="0"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Scratch Lesson 1 Presentation"
+                            ></iframe>
+
+                        </div>
+
+                        <p class="media-description">
+                            Follow along with the original YMCA Code
+                            Academy Scratch Lesson 1 presentation and
+                            review each animation example at your own
+                            pace.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vQDk1Tmli5KmFU1YphNnTG228BqXj-AO6i4NQlEhf6UakWPfzHEFdIlDT3-636JvjxcsmabYlDo2bet/pub?start=false&loop=false&delayms=3000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Full Presentation
+                        </a>
+
+                    </article>
+
+                    <!-- Independent Learning Guide -->
+                    <article class="lesson-media-card learning-guide-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon guide-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Learning Guide
+                                </p>
+
+                                <h3>
+                                    How to Complete This Lesson
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lesson-guide-steps">
+
+                            <div class="lesson-guide-step">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h4>
+                                        Explore the Workspace
+                                    </h4>
+
+                                    <p>
+                                        Find the stage, sprite list,
+                                        block categories, and coding
+                                        area.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h4>
+                                        Choose a Sprite
+                                    </h4>
+
+                                    <p>
+                                        Select the character or object
+                                        that will be animated.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h4>
+                                        Connect Your Blocks
+                                    </h4>
+
+                                    <p>
+                                        Begin with an event and connect
+                                        motion and looks blocks beneath
+                                        it.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h4>
+                                        Test and Improve
+                                    </h4>
+
+                                    <p>
+                                        Click the green flag, watch the
+                                        animation, and adjust the timing.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="#lesson-vocabulary"
+                            class="button lesson-guide-button"
+                        >
+                            Continue the Lesson
+                            <span>↓</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Vocabulary -->
+        <section
+            class="section vocabulary-section"
+            id="lesson-vocabulary"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Key Vocabulary
+                        </p>
+
+                        <h2>
+                            Words every new Scratch creator should know.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These terms explain the characters, workspace,
+                        instructions, and events used in a Scratch
+                        project.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Sprite
+                        </h3>
+
+                        <p>
+                            A character or object that can move, speak,
+                            change appearance, and follow instructions.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Stage
+                        </h3>
+
+                        <p>
+                            The area where the Scratch project and its
+                            animations are displayed.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Block
+                        </h3>
+
+                        <p>
+                            A colorful instruction that tells a sprite
+                            what to do.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Script
+                        </h3>
+
+                        <p>
+                            A connected group of blocks that works
+                            together as a program.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Event
+                        </h3>
+
+                        <p>
+                            An action that starts a script, such as
+                            clicking the green flag.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Costume
+                        </h3>
+
+                        <p>
+                            One appearance or pose that belongs to a
+                            sprite.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sprites and Stage -->
+        <section
+            class="section concept-section print-concept-section"
+            id="sprites-stage"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 01
+                    </p>
+
+                    <p class="section-label">
+                        Sprites and the Stage
+                    </p>
+
+                    <h2>
+                        Choose what appears in your animation.
+                    </h2>
+
+                    <p>
+                        A sprite is a character or object that follows
+                        your blocks. Every sprite can have its own code,
+                        position, costumes, and sounds.
+                    </p>
+
+                    <p>
+                        The stage is the background area where the
+                        animation happens. You can change its backdrop
+                        to create a new setting.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Important</span>
+
+                        <p>
+                            Always check which sprite is selected before
+                            adding blocks. The blocks are added only to
+                            the selected sprite.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Workspace Part 1
+                            </p>
+
+                            <span>
+                                The Sprite
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        Sprite:
+                                    </span>
+
+                                    <span class="code-string">
+                                        Scratch Cat
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        Position:
+                                    </span>
+
+                                    <span class="code-number">
+                                        x: 0, y: 0
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        Direction:
+                                    </span>
+
+                                    <span class="code-number">
+                                        90
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Purpose</p>
+
+                            <strong>
+                                The sprite is the character you control.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Workspace Part 2
+                            </p>
+
+                            <span>
+                                The Stage
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        Backdrop:
+                                    </span>
+
+                                    <span class="code-string">
+                                        Blue Sky
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        Green Flag:
+                                    </span>
+
+                                    <span class="code-string">
+                                        Starts the project
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Purpose</p>
+
+                            <strong>
+                                The stage is where the animation appears.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Motion and Looks Categories -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Block Categories
+                        </p>
+
+                        <h2>
+                            Choose blocks based on the action you need.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Scratch organizes blocks into categories. Each
+                        category uses a different color and controls a
+                        different part of the project.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            M
+                        </div>
+
+                        <div>
+
+                            <p>Motion</p>
+
+                            <code>
+                                move 10 steps
+                            </code>
+
+                            <span>
+                                Moves, turns, glides, or changes a
+                                sprite's position.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            L
+                        </div>
+
+                        <div>
+
+                            <p>Looks</p>
+
+                            <code>
+                                say "Hello!"
+                            </code>
+
+                            <span>
+                                Changes appearance, displays speech, or
+                                switches costumes.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            E
+                        </div>
+
+                        <div>
+
+                            <p>Events</p>
+
+                            <code>
+                                when green flag clicked
+                            </code>
+
+                            <span>
+                                Starts code when something happens.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            C
+                        </div>
+
+                        <div>
+
+                            <p>Control</p>
+
+                            <code>
+                                wait 1 second
+                            </code>
+
+                            <span>
+                                Controls timing, repetition, and the
+                                order of actions.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Blocks and Events -->
+        <section
+            class="section concept-section variable-concept-section"
+            id="blocks-events"
+        >
+
+            <div class="container concept-layout reverse-concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 02
+                    </p>
+
+                    <p class="section-label">
+                        Blocks and Events
+                    </p>
+
+                    <h2>
+                        Connect instructions in the order they should run.
+                    </h2>
+
+                    <p>
+                        Scratch reads a connected script from top to
+                        bottom. The first block is often an event that
+                        tells Scratch when to start.
+                    </p>
+
+                    <p>
+                        Blocks underneath the event run one at a time
+                        in the order they are connected.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Start Here</span>
+
+                        <p>
+                            Use the “when green flag clicked” event at
+                            the top of a basic animation script.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 1
+                            </p>
+
+                            <span>
+                                A Simple Movement Script
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when green flag clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        go to x: -150 y: 0
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        glide 2 seconds to x: 150 y: 0
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Result</p>
+
+                            <strong>
+                                The sprite glides from left to right.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 2
+                            </p>
+
+                            <span>
+                                Movement and Speech
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when green flag clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-string">
+                                        say "Watch me move!" for 2 seconds
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        move 100 steps
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-number">
+                                        next costume
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Result</p>
+
+                            <strong>
+                                The sprite speaks, moves, and changes pose.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Try It Yourself -->
+        <section class="section try-it-section">
+
+            <div class="container">
+
+                <div class="try-it-card">
+
+                    <div class="try-it-heading">
+
+                        <div class="try-it-label">
+                            Try It Yourself
+                        </div>
+
+                        <h2>
+                            Put the animation blocks in order.
+                        </h2>
+
+                        <p>
+                            Type the numbers in the order the blocks
+                            should run. Separate the numbers with commas.
+                        </p>
+
+                        <blockquote>
+                            1. move 50 steps<br>
+                            2. when green flag clicked<br>
+                            3. say "Hello!" for 2 seconds
+                        </blockquote>
+
+                    </div>
+
+                    <div class="try-it-editor">
+
+                        <div class="try-editor-top">
+
+                            <p>block_order.txt</p>
+
+                            <span>Practice</span>
+
+                        </div>
+
+                        <label
+                            for="scratch-order-input"
+                            class="sr-only"
+                        >
+                            Type the correct block order
+                        </label>
+
+                        <textarea
+                            id="scratch-order-input"
+                            class="practice-code-input"
+                            spellcheck="false"
+                            placeholder="Example: 2, 1, 3"
+                        ></textarea>
+
+                        <div class="try-it-actions">
+
+                            <button
+                                type="button"
+                                class="check-code-button"
+                                id="check-scratch-order"
+                            >
+                                Check My Order
+                            </button>
+
+                            <button
+                                type="button"
+                                class="show-answer-button"
+                                id="show-scratch-order"
+                            >
+                                Show Answer
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="practice-feedback"
+                            id="scratch-order-feedback"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Costumes and Timing -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Costumes and Timing
+                        </p>
+
+                        <h2>
+                            Make movement feel animated.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Switching costumes and adding short waits can
+                        make a sprite appear to walk, dance, or change
+                        expressions.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            1
+                        </div>
+
+                        <div>
+
+                            <p>Change Costume</p>
+
+                            <code>
+                                next costume
+                            </code>
+
+                            <span>
+                                Switches the sprite to its next appearance.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            2
+                        </div>
+
+                        <div>
+
+                            <p>Add a Wait</p>
+
+                            <code>
+                                wait 0.2 seconds
+                            </code>
+
+                            <span>
+                                Creates a small pause between actions.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            3
+                        </div>
+
+                        <div>
+
+                            <p>Move Again</p>
+
+                            <code>
+                                move 10 steps
+                            </code>
+
+                            <span>
+                                Changes the sprite's position.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            !
+                        </div>
+
+                        <div>
+
+                            <p>Test the Speed</p>
+
+                            <code>
+                                wait 2 seconds
+                            </code>
+
+                            <span>
+                                A long wait may make the animation feel
+                                slow.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Common Scratch Mistakes
+                        </p>
+
+                        <h2>
+                            Check the sprite, event, and block connection.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Scratch blocks prevent many typing errors, but
+                        projects can still behave differently than
+                        expected.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Event at the Top</p>
+
+                            <code>
+                                when green flag clicked
+                            </code>
+
+                            <span>
+                                Gives the script a clear starting event.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Blocks Connected</p>
+
+                            <code>
+                                event → motion → looks
+                            </code>
+
+                            <span>
+                                Connected blocks run as one script.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Wrong Sprite Selected</p>
+
+                            <code>
+                                Sprite 2 selected
+                            </code>
+
+                            <span>
+                                The code may be added to the wrong
+                                character.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Loose Block</p>
+
+                            <code>
+                                move 10 steps
+                            </code>
+
+                            <span>
+                                A loose block does not run with the
+                                connected script.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Practice Quiz -->
+        <section
+            class="section practice-section"
+            id="practice"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Practice Quiz
+                        </p>
+
+                        <h2>
+                            Check your understanding of Scratch animation.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Answer all four questions, then check your score.
+                    </p>
+
+                </div>
+
+                <form
+                    class="practice-quiz"
+                    id="scratch-lesson-one-quiz"
+                >
+
+                    <!-- Question 1 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>01</span>
+                            What is a sprite?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-1"
+                                value="a"
+                            >
+
+                            <span>
+                                A character or object that follows code
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-1"
+                                value="b"
+                            >
+
+                            <span>
+                                The button used to save a project
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-1"
+                                value="c"
+                            >
+
+                            <span>
+                                The background music of a project
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 2 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>02</span>
+                            Which block is commonly used to start a
+                            Scratch project?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-2"
+                                value="a"
+                            >
+
+                            <span>
+                                move 10 steps
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-2"
+                                value="b"
+                            >
+
+                            <span>
+                                when green flag clicked
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-2"
+                                value="c"
+                            >
+
+                            <span>
+                                next costume
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 3 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>03</span>
+                            What does the stage do?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-3"
+                                value="a"
+                            >
+
+                            <span>
+                                Displays the project and its animations
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-3"
+                                value="b"
+                            >
+
+                            <span>
+                                Automatically creates every block
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-3"
+                                value="c"
+                            >
+
+                            <span>
+                                Stores only the sound effects
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 4 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>04</span>
+                            Why would you use the next costume block?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-4"
+                                value="a"
+                            >
+
+                            <span>
+                                To delete the sprite
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-4"
+                                value="b"
+                            >
+
+                            <span>
+                                To change the sprite's appearance
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="scratch-one-question-4"
+                                value="c"
+                            >
+
+                            <span>
+                                To stop the green flag from working
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <button
+                        type="submit"
+                        class="button button-primary quiz-submit-button"
+                    >
+                        Check My Score
+                    </button>
+
+                    <div
+                        class="quiz-result"
+                        id="scratch-lesson-one-quiz-result"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Mini Challenge -->
+        <section
+            class="section mini-challenge-section"
+            id="mini-challenge"
+        >
+
+            <div class="container">
+
+                <div class="mini-challenge-card">
+
+                    <div class="challenge-badge">
+                        Final Activity
+                    </div>
+
+                    <div class="mini-challenge-layout">
+
+                        <div class="mini-challenge-copy">
+
+                            <p class="section-label">
+                                Mini Animation Challenge
+                            </p>
+
+                            <h2>
+                                Create a moving character introduction.
+                            </h2>
+
+                            <p>
+                                Build a short animation in which a
+                                character enters the stage, speaks,
+                                changes appearance, and moves again.
+                            </p>
+
+                            <div class="challenge-requirements">
+
+                                <p>
+                                    <span>1</span>
+                                    Choose one sprite and one backdrop.
+                                </p>
+
+                                <p>
+                                    <span>2</span>
+                                    Begin with the green flag event.
+                                </p>
+
+                                <p>
+                                    <span>3</span>
+                                    Move or glide the sprite.
+                                </p>
+
+                                <p>
+                                    <span>4</span>
+                                    Make the sprite say a message.
+                                </p>
+
+                                <p>
+                                    <span>5</span>
+                                    Change the sprite's costume.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="challenge-example">
+
+                            <div class="challenge-example-top">
+
+                                <p>
+                                    Example Block Plan
+                                </p>
+
+                                <span>
+                                    Customize the character and message
+                                </span>
+
+                            </div>
+
+                            <div class="challenge-code">
+
+                                <p>
+                                    <span class="code-purple">
+                                        when green flag clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        go to x: -180 y: 0
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        glide 2 seconds to x: 0 y: 0
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-string">
+                                        say "Welcome to my animation!"
+                                        for 2 seconds
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-number">
+                                        next costume
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        move 80 steps
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Completion -->
+        <section class="section lesson-complete-section">
+
+            <div class="container lesson-complete-layout">
+
+                <div class="completion-symbol">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p class="section-label">
+                        Lesson Complete
+                    </p>
+
+                    <h2>
+                        You can now create a Scratch animation.
+                    </h2>
+
+                    <p>
+                        You learned how sprites, the stage, events,
+                        motion blocks, looks blocks, and costumes work
+                        together inside a Scratch project.
+                    </p>
+
+                </div>
+
+                <div class="completion-actions">
+
+                    <button
+                        type="button"
+                        class="button button-primary"
+                        id="complete-lesson-button"
+                    >
+                        Mark Lesson Complete
+                    </button>
+
+                    <a
+                        href="learn.html"
+                        class="button completion-secondary-button"
+                    >
+                        Return to Lesson Library
+                    </a>
+
+                    <p
+                        class="completion-message"
+                        id="completion-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <p class="footer-logo">
+                    YMCA Code Academy
+                </p>
+
+                <p>
+                    A volunteer-led youth coding program based at the
+                    Paterson YMCA.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Website created by a high school volunteer who
+                    founded and teaches YMCA Code Academy.
+                </p>
+
+                <p class="footer-note">
+                    This website is not operated by the YMCA of the USA.
+                </p>
+
+                <p>
+                    © <span id="current-year"></span>
+                    YMCA Code Academy
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

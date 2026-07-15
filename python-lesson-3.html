@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Learn how to use conditionals, comparison operators, if, elif, and else statements in Python with YMCA Code Academy."
+    >
+
+    <title>
+        Python Lesson 3: Conditionals and Making Decisions with Code
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lesson-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                YMCA <span>Code Academy</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="learn.html" class="active-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="challenge.html">
+                        Code Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Student Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Lesson Hero -->
+        <section class="lesson-hero">
+
+            <div class="lesson-hero-grid"></div>
+
+            <div class="lesson-hero-glow lesson-glow-one"></div>
+            <div class="lesson-hero-glow lesson-glow-two"></div>
+
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <nav
+                    class="lesson-breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="learn.html">
+                        Learn
+                    </a>
+
+                    <span>→</span>
+
+                    <a href="learn.html#python-lessons">
+                        Python
+                    </a>
+
+                    <span>→</span>
+
+                    <p>Lesson 3</p>
+
+                </nav>
+
+                <div class="lesson-hero-layout">
+
+                    <div class="lesson-hero-copy">
+
+                        <div class="lesson-hero-labels">
+
+                            <span class="lesson-course-label">
+                                Python
+                            </span>
+
+                            <span class="lesson-level-label">
+                                Beginner
+                            </span>
+
+                            <span class="lesson-time-label">
+                                35–45 Minutes
+                            </span>
+
+                        </div>
+
+                        <p class="lesson-number-label">
+                            Lesson 03
+                        </p>
+
+                        <h1>
+                            Make Decisions
+                            <span>With Conditionals</span>
+                        </h1>
+
+                        <p class="lesson-hero-description">
+                            Teach your program to examine information,
+                            make a decision, and choose what happens
+                            next using if, elif, and else statements.
+                        </p>
+
+                        <div class="lesson-hero-actions">
+
+                            <a
+                                href="#lesson-start"
+                                class="button button-primary lesson-start-button"
+                            >
+                                Start Lesson
+                                <span>↓</span>
+                            </a>
+
+                            <a
+                                href="learn.html"
+                                class="lesson-back-link"
+                            >
+                                ← Return to Lessons
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Hero Code Example -->
+                    <div class="lesson-hero-code">
+
+                        <div class="lesson-code-window">
+
+                            <div class="lesson-code-top">
+
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <p>lesson_3.py</p>
+
+                            </div>
+
+                            <div class="lesson-code-body">
+
+                                <p>
+                                    <span class="code-comment">
+                                        # Ask the user for their age
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        age
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-function">
+                                        int
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-function"
+                                    >input</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"How old are you? "</span><span
+                                        class="code-symbol"
+                                    >))</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        if
+                                    </span>
+
+                                    <span class="code-variable">
+                                        age
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        10
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"You can join the coding challenge!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        else
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Keep practicing your coding skills!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                            <div class="lesson-code-output">
+
+                                <p>
+                                    <span>▶</span>
+                                    Program Conversation
+                                </p>
+
+                                <strong>
+                                    How old are you? 12
+                                </strong>
+
+                                <strong>
+                                    You can join the coding challenge!
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Progress Navigation -->
+        <section class="lesson-progress-bar">
+
+            <div class="container lesson-progress-layout">
+
+                <a
+                    href="#lesson-start"
+                    class="progress-item active-progress"
+                >
+                    <span>01</span>
+                    <p>Overview</p>
+                </a>
+
+                <a
+                    href="#presentation"
+                    class="progress-item"
+                >
+                    <span>02</span>
+                    <p>Presentation</p>
+                </a>
+
+                <a
+                    href="#lesson-vocabulary"
+                    class="progress-item"
+                >
+                    <span>03</span>
+                    <p>Vocabulary</p>
+                </a>
+
+                <a
+                    href="#if-statements"
+                    class="progress-item"
+                >
+                    <span>04</span>
+                    <p>If</p>
+                </a>
+
+                <a
+                    href="#multiple-decisions"
+                    class="progress-item"
+                >
+                    <span>05</span>
+                    <p>Elif &amp; Else</p>
+                </a>
+
+                <a
+                    href="#practice"
+                    class="progress-item"
+                >
+                    <span>06</span>
+                    <p>Practice</p>
+                </a>
+
+                <a
+                    href="#mini-challenge"
+                    class="progress-item"
+                >
+                    <span>07</span>
+                    <p>Challenge</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Overview -->
+        <section
+            class="section lesson-overview-section"
+            id="lesson-start"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lesson Overview
+                        </p>
+
+                        <h2>
+                            What will you learn?
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        By the end of this lesson, you will be able to
+                        write programs that test conditions and choose
+                        different actions based on the result.
+                    </p>
+
+                </div>
+
+                <div class="lesson-goal-grid">
+
+                    <article class="lesson-goal-card goal-card-red">
+
+                        <div class="lesson-goal-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Test a Condition
+                        </h3>
+
+                        <p>
+                            Use comparison operators to ask whether
+                            two values are equal, different, greater
+                            than, or less than one another.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-purple">
+
+                        <div class="lesson-goal-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Make a Decision
+                        </h3>
+
+                        <p>
+                            Use an <code>if</code> statement to run
+                            code only when a condition is true.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-blue">
+
+                        <div class="lesson-goal-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Create Multiple Paths
+                        </h3>
+
+                        <p>
+                            Use <code>elif</code> and
+                            <code>else</code> to give a program more
+                            than one possible response.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <aside class="before-you-begin">
+
+                    <div class="before-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p class="before-label">
+                            Before You Begin
+                        </p>
+
+                        <h3>
+                            Complete Python Lessons 1 and 2 first.
+                        </h3>
+
+                        <p>
+                            This lesson uses print statements, variables,
+                            and user input. Review the earlier lessons if
+                            you need help with any of those concepts.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Presentation and Learning Guide -->
+        <section
+            class="section lesson-media-section"
+            id="presentation"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Learn the Lesson
+                        </p>
+
+                        <h2>
+                            Review the slides and follow along.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Use the original class presentation together
+                        with the explanations and activities below.
+                    </p>
+
+                </div>
+
+                <div class="lesson-media-grid">
+
+                    <!-- Presentation -->
+                    <article class="lesson-media-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon presentation-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Lesson Slides
+                                </p>
+
+                                <h3>
+                                    Class Presentation
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="embedded-presentation">
+
+                            <iframe
+                                src="https://docs.google.com/presentation/d/e/2PACX-1vTSTjbMevcJgv1dTnwU1ypXg8d4yEnIJa0e1n3Ckn7xOGkdwPlEIhnuP802Oakqxd26Smd0ZRuzwd4V/pubembed?start=false&loop=false&delayms=3000"
+                                frameborder="0"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Python Lesson 3 Presentation"
+                            ></iframe>
+
+                        </div>
+
+                        <p class="media-description">
+                            Follow along with the original YMCA Code
+                            Academy Lesson 3 presentation and review
+                            each example at your own pace.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vTSTjbMevcJgv1dTnwU1ypXg8d4yEnIJa0e1n3Ckn7xOGkdwPlEIhnuP802Oakqxd26Smd0ZRuzwd4V/pub?start=false&loop=false&delayms=3000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Full Presentation
+                        </a>
+
+                    </article>
+
+                    <!-- Independent Learning Guide -->
+                    <article class="lesson-media-card learning-guide-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon guide-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Learning Guide
+                                </p>
+
+                                <h3>
+                                    How to Complete This Lesson
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lesson-guide-steps">
+
+                            <div class="lesson-guide-step">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h4>
+                                        Review the Condition
+                                    </h4>
+
+                                    <p>
+                                        Identify the comparison that
+                                        the program is testing.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h4>
+                                        Predict the Result
+                                    </h4>
+
+                                    <p>
+                                        Decide whether the condition
+                                        will be true or false.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h4>
+                                        Check the Indentation
+                                    </h4>
+
+                                    <p>
+                                        Make sure the code inside each
+                                        conditional is indented.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h4>
+                                        Build a Decision Program
+                                    </h4>
+
+                                    <p>
+                                        Combine input and conditionals
+                                        to create several possible results.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="#lesson-vocabulary"
+                            class="button lesson-guide-button"
+                        >
+                            Continue the Lesson
+                            <span>↓</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Vocabulary -->
+        <section
+            class="section vocabulary-section"
+            id="lesson-vocabulary"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Key Vocabulary
+                        </p>
+
+                        <h2>
+                            Words that help programs make decisions.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These terms describe how Python checks
+                        information and chooses which code to run.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Conditional
+                        </h3>
+
+                        <p>
+                            Code that makes a decision based on whether
+                            a condition is true or false.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Condition
+                        </h3>
+
+                        <p>
+                            A statement or comparison that Python
+                            evaluates as true or false.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Boolean
+                        </h3>
+
+                        <p>
+                            A value that can be either
+                            <code>True</code> or <code>False</code>.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Comparison Operator
+                        </h3>
+
+                        <p>
+                            A symbol such as <code>==</code>,
+                            <code>&gt;</code>, or <code>&lt;</code>
+                            that compares two values.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Indentation
+                        </h3>
+
+                        <p>
+                            The spaces at the beginning of a line that
+                            show which code belongs inside a conditional.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Branch
+                        </h3>
+
+                        <p>
+                            One possible path that a program can follow
+                            after making a decision.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- If Statements -->
+        <section
+            class="section concept-section print-concept-section"
+            id="if-statements"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 01
+                    </p>
+
+                    <p class="section-label">
+                        If Statements
+                    </p>
+
+                    <h2>
+                        Run code only when something is true.
+                    </h2>
+
+                    <p>
+                        An <code>if</code> statement checks a condition.
+                        When the condition is true, Python runs the
+                        indented code beneath it.
+                    </p>
+
+                    <p>
+                        When the condition is false, Python skips the
+                        indented code and continues with the program.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Structure</span>
+
+                        <p>
+                            Begin with <code>if</code>, write the
+                            condition, add a colon, and indent the code
+                            that should run.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 1
+                            </p>
+
+                            <span>
+                                Checking a Score
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        score
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-number">
+                                        10
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        if
+                                    </span>
+
+                                    <span class="code-variable">
+                                        score
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        10
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"You reached the goal!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>
+                                You reached the goal!
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 2
+                            </p>
+
+                            <span>
+                                Checking a Password
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        password
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-string">
+                                        "python"
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        if
+                                    </span>
+
+                                    <span class="code-variable">
+                                        password
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        ==
+                                    </span>
+
+                                    <span class="code-string">
+                                        "python"
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Access granted"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>
+                                Access granted
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Try It Yourself -->
+        <section class="section try-it-section">
+
+            <div class="container">
+
+                <div class="try-it-card">
+
+                    <div class="try-it-heading">
+
+                        <div class="try-it-label">
+                            Try It Yourself
+                        </div>
+
+                        <h2>
+                            Check whether a player has enough points.
+                        </h2>
+
+                        <p>
+                            Write an if statement that checks whether
+                            <code>points</code> is greater than or equal
+                            to 10.
+                        </p>
+
+                        <blockquote>
+                            Print "Level complete!" when the condition
+                            is true.
+                        </blockquote>
+
+                    </div>
+
+                    <div class="try-it-editor">
+
+                        <div class="try-editor-top">
+
+                            <p>your_code.py</p>
+
+                            <span>Practice</span>
+
+                        </div>
+
+                        <label
+                            for="conditional-practice-input"
+                            class="sr-only"
+                        >
+                            Type your conditional statement
+                        </label>
+
+                        <textarea
+                            id="conditional-practice-input"
+                            class="practice-code-input"
+                            spellcheck="false"
+                            placeholder="Type your code here..."
+                        ></textarea>
+
+                        <div class="try-it-actions">
+
+                            <button
+                                type="button"
+                                class="check-code-button"
+                                id="check-conditional-answer"
+                            >
+                                Check My Code
+                            </button>
+
+                            <button
+                                type="button"
+                                class="show-answer-button"
+                                id="show-conditional-answer"
+                            >
+                                Show Answer
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="practice-feedback"
+                            id="conditional-feedback"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Comparison Operators -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Comparison Operators
+                        </p>
+
+                        <h2>
+                            Ask Python different kinds of questions.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Comparison operators let your program compare
+                        words, numbers, variables, and user answers.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ==
+                        </div>
+
+                        <div>
+
+                            <p>Equal To</p>
+
+                            <code>
+                                answer == "yes"
+                            </code>
+
+                            <span>
+                                Checks whether two values are equal.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            !=
+                        </div>
+
+                        <div>
+
+                            <p>Not Equal To</p>
+
+                            <code>
+                                answer != "no"
+                            </code>
+
+                            <span>
+                                Checks whether two values are different.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            &gt;
+                        </div>
+
+                        <div>
+
+                            <p>Greater Than</p>
+
+                            <code>
+                                score &gt; 20
+                            </code>
+
+                            <span>
+                                Checks whether the first value is larger.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            &lt;
+                        </div>
+
+                        <div>
+
+                            <p>Less Than</p>
+
+                            <code>
+                                lives &lt; 1
+                            </code>
+
+                            <span>
+                                Checks whether the first value is smaller.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ≥
+                        </div>
+
+                        <div>
+
+                            <p>Greater Than or Equal To</p>
+
+                            <code>
+                                age &gt;= 10
+                            </code>
+
+                            <span>
+                                Includes values that are exactly equal.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ≤
+                        </div>
+
+                        <div>
+
+                            <p>Less Than or Equal To</p>
+
+                            <code>
+                                attempts &lt;= 3
+                            </code>
+
+                            <span>
+                                Includes values that are exactly equal.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Elif and Else -->
+        <section
+            class="section concept-section variable-concept-section"
+            id="multiple-decisions"
+        >
+
+            <div class="container concept-layout reverse-concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 02
+                    </p>
+
+                    <p class="section-label">
+                        Elif and Else
+                    </p>
+
+                    <h2>
+                        Give your program more than one path.
+                    </h2>
+
+                    <p>
+                        Use <code>elif</code> when you want Python to
+                        check another condition after the first
+                        condition is false.
+                    </p>
+
+                    <p>
+                        Use <code>else</code> as the final path. The
+                        else block runs when none of the earlier
+                        conditions are true.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Order Matters</span>
+
+                        <p>
+                            Python checks the conditions from top to
+                            bottom and runs the first matching branch.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 3
+                            </p>
+
+                            <span>
+                                Three Possible Results
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        score
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-number">
+                                        8
+                                    </span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        if
+                                    </span>
+
+                                    <span class="code-variable">
+                                        score
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        10
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Excellent score!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        elif
+                                    </span>
+
+                                    <span class="code-variable">
+                                        score
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        5
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Good job!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        else
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Keep practicing!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>
+                                Good job!
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="variable-visual-card">
+
+                        <div class="variable-container-name">
+                            Decision Order
+                        </div>
+
+                        <div class="variable-container">
+
+                            <span>
+                                if → elif → else
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Python follows the first branch whose
+                            condition is true. If no condition is true,
+                            it follows the <code>else</code> branch.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Indentation and Common Mistakes -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Syntax and Indentation
+                        </p>
+
+                        <h2>
+                            Small details control the decision.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Check your colon, comparison operator, and
+                        indentation whenever a conditional does not work.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct</p>
+
+                            <code>
+                                if answer == "yes":
+                            </code>
+
+                            <span>
+                                The condition ends with a colon.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct</p>
+
+                            <code>
+                                &nbsp;&nbsp;&nbsp;&nbsp;print("Correct!")
+                            </code>
+
+                            <span>
+                                The code inside the if statement is indented.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Incorrect</p>
+
+                            <code>
+                                if answer = "yes":
+                            </code>
+
+                            <span>
+                                Use two equals signs when comparing values.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Incorrect</p>
+
+                            <code>
+                                if score &gt; 10
+                            </code>
+
+                            <span>
+                                The colon is missing.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Practice Quiz -->
+        <section
+            class="section practice-section"
+            id="practice"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Check Your Understanding
+                        </p>
+
+                        <h2>
+                            Practice what you learned.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Answer all four questions and then check your score.
+                    </p>
+
+                </div>
+
+                <form
+                    class="practice-quiz"
+                    id="lesson-three-quiz"
+                >
+
+                    <!-- Question 1 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 1</span>
+
+                            What does an if statement do?
+
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-1"
+                                value="a"
+                            >
+
+                            <span>
+                                It repeats code forever.
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-1"
+                                value="b"
+                            >
+
+                            <span>
+                                It runs code when a condition is true.
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-1"
+                                value="c"
+                            >
+
+                            <span>
+                                It deletes a variable.
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 2 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 2</span>
+
+                            Which operator checks whether two values
+                            are equal?
+
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-2"
+                                value="a"
+                            >
+
+                            <span>=</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-2"
+                                value="b"
+                            >
+
+                            <span>==</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-2"
+                                value="c"
+                            >
+
+                            <span>!=</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 3 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 3</span>
+
+                            Which keyword checks another condition after
+                            the original if condition is false?
+
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-3"
+                                value="a"
+                            >
+
+                            <span>elif</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-3"
+                                value="b"
+                            >
+
+                            <span>print</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-3"
+                                value="c"
+                            >
+
+                            <span>input</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 4 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 4</span>
+
+                            What will this program display?
+
+                        </legend>
+
+                        <div class="quiz-code">
+
+                            <p>
+                                points = 4
+                            </p>
+
+                            <p>
+                                if points &gt;= 5:
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;print("You win!")
+                            </p>
+
+                            <p>
+                                else:
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;print("Try again!")
+                            </p>
+
+                        </div>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-4"
+                                value="a"
+                            >
+
+                            <span>You win!</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-4"
+                                value="b"
+                            >
+
+                            <span>Try again!</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-three-question-4"
+                                value="c"
+                            >
+
+                            <span>Nothing</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <div class="quiz-submit-area">
+
+                        <button
+                            type="submit"
+                            class="button button-primary quiz-submit-button"
+                        >
+                            Check My Answers
+                        </button>
+
+                        <div
+                            class="quiz-result"
+                            id="lesson-three-quiz-result"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Mini Challenge -->
+        <section
+            class="section mini-challenge-section"
+            id="mini-challenge"
+        >
+
+            <div class="container">
+
+                <div class="mini-challenge-card">
+
+                    <div class="challenge-badge">
+                        Final Activity
+                    </div>
+
+                    <div class="mini-challenge-layout">
+
+                        <div class="mini-challenge-copy">
+
+                            <p class="section-label">
+                                Mini Coding Challenge
+                            </p>
+
+                            <h2>
+                                Create a coding-level adviser.
+                            </h2>
+
+                            <p>
+                                Ask the user how many coding lessons
+                                they have completed. Then use conditionals
+                                to recommend what they should do next.
+                            </p>
+
+                            <div class="challenge-requirements">
+
+                                <p>
+                                    <span>1</span>
+                                    Ask how many lessons the user completed.
+                                </p>
+
+                                <p>
+                                    <span>2</span>
+                                    Convert the answer into an integer.
+                                </p>
+
+                                <p>
+                                    <span>3</span>
+                                    Use if, elif, and else.
+                                </p>
+
+                                <p>
+                                    <span>4</span>
+                                    Print a different message for each level.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="challenge-example">
+
+                            <div class="challenge-example-top">
+
+                                <p>
+                                    Example Structure
+                                </p>
+
+                                <span>
+                                    Change the messages
+                                </span>
+
+                            </div>
+
+                            <div class="challenge-code">
+
+                                <p>
+                                    <span class="code-variable">
+                                        lessons
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-function">
+                                        int
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-function"
+                                    >input</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"How many lessons have you completed? "</span><span
+                                        class="code-symbol"
+                                    >))</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        if
+                                    </span>
+
+                                    <span class="code-variable">
+                                        lessons
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        5
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"You are ready to build a project!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        elif
+                                    </span>
+
+                                    <span class="code-variable">
+                                        lessons
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        2
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Keep building your Python skills!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        else
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Start with the beginner lessons!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Completion -->
+        <section class="section lesson-complete-section">
+
+            <div class="container lesson-complete-layout">
+
+                <div class="completion-symbol">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p class="section-label">
+                        Lesson Complete
+                    </p>
+
+                    <h2>
+                        You can now make programs that choose.
+                    </h2>
+
+                    <p>
+                        You learned how to test conditions, compare
+                        values, use indentation, and create multiple
+                        paths with if, elif, and else.
+                    </p>
+
+                </div>
+
+                <div class="completion-actions">
+
+                    <button
+                        type="button"
+                        class="button button-primary"
+                        id="complete-lesson-button"
+                    >
+                        Mark Lesson Complete
+                    </button>
+
+                    <a
+                        href="learn.html"
+                        class="button completion-secondary-button"
+                    >
+                        Return to Lesson Library
+                    </a>
+
+                    <p
+                        class="completion-message"
+                        id="completion-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <p class="footer-logo">
+                    YMCA Code Academy
+                </p>
+
+                <p>
+                    A volunteer-led youth coding program based at the
+                    Paterson YMCA.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Website created by a high school volunteer who
+                    founded and teaches YMCA Code Academy.
+                </p>
+
+                <p class="footer-note">
+                    This website is not operated by the YMCA of the USA.
+                </p>
+
+                <p>
+                    © <span id="current-year"></span>
+                    YMCA Code Academy
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

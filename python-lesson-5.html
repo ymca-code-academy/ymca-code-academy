@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Learn how to create, access, change, and loop through Python lists with YMCA Code Academy."
+    >
+
+    <title>
+        Python Lesson 5: Lists
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lesson-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                YMCA <span>Code Academy</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="learn.html" class="active-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="challenge.html">
+                        Code Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Student Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Lesson Hero -->
+        <section class="lesson-hero">
+
+            <div class="lesson-hero-grid"></div>
+
+            <div class="lesson-hero-glow lesson-glow-one"></div>
+            <div class="lesson-hero-glow lesson-glow-two"></div>
+
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <nav
+                    class="lesson-breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="learn.html">
+                        Learn
+                    </a>
+
+                    <span>→</span>
+
+                    <a href="learn.html#python-lessons">
+                        Python
+                    </a>
+
+                    <span>→</span>
+
+                    <p>Lesson 5</p>
+
+                </nav>
+
+                <div class="lesson-hero-layout">
+
+                    <div class="lesson-hero-copy">
+
+                        <div class="lesson-hero-labels">
+
+                            <span class="lesson-course-label">
+                                Python
+                            </span>
+
+                            <span class="lesson-level-label">
+                                Intermediate
+                            </span>
+
+                            <span class="lesson-time-label">
+                                40–50 Minutes
+                            </span>
+
+                        </div>
+
+                        <p class="lesson-number-label">
+                            Lesson 05
+                        </p>
+
+                        <h1>
+                            Organize Information
+                            <span>With Lists</span>
+                        </h1>
+
+                        <p class="lesson-hero-description">
+                            Store multiple pieces of information inside
+                            one variable, access individual items, add
+                            new items, and process an entire collection.
+                        </p>
+
+                        <div class="lesson-hero-actions">
+
+                            <a
+                                href="#lesson-start"
+                                class="button button-primary lesson-start-button"
+                            >
+                                Start Lesson
+                                <span>↓</span>
+                            </a>
+
+                            <a
+                                href="learn.html"
+                                class="lesson-back-link"
+                            >
+                                ← Return to Lessons
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Hero Code Example -->
+                    <div class="lesson-hero-code">
+
+                        <div class="lesson-code-window">
+
+                            <div class="lesson-code-top">
+
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <p>lesson_5.py</p>
+
+                            </div>
+
+                            <div class="lesson-code-body">
+
+                                <p>
+                                    <span class="code-comment">
+                                        # Store several coding projects
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        projects
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-symbol">[</span><span
+                                        class="code-string"
+                                    >"Quiz"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Game"
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Story"
+                                    </span><span
+                                        class="code-symbol"
+                                    >]</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        for
+                                    </span>
+
+                                    <span class="code-variable">
+                                        project
+                                    </span>
+
+                                    <span class="code-purple">
+                                        in
+                                    </span>
+
+                                    <span class="code-variable">
+                                        projects
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span
+                                        class="code-symbol"
+                                    >(</span><span
+                                        class="code-string"
+                                    >"Build a"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-variable">
+                                        project
+                                    </span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                            <div class="lesson-code-output">
+
+                                <p>
+                                    <span>▶</span>
+                                    Output
+                                </p>
+
+                                <strong>Build a Quiz</strong>
+                                <strong>Build a Game</strong>
+                                <strong>Build a Story</strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Progress Navigation -->
+        <section class="lesson-progress-bar">
+
+            <div class="container lesson-progress-layout">
+
+                <a
+                    href="#lesson-start"
+                    class="progress-item active-progress"
+                >
+                    <span>01</span>
+                    <p>Overview</p>
+                </a>
+
+                <a
+                    href="#presentation"
+                    class="progress-item"
+                >
+                    <span>02</span>
+                    <p>Presentation</p>
+                </a>
+
+                <a
+                    href="#lesson-vocabulary"
+                    class="progress-item"
+                >
+                    <span>03</span>
+                    <p>Vocabulary</p>
+                </a>
+
+                <a
+                    href="#creating-lists"
+                    class="progress-item"
+                >
+                    <span>04</span>
+                    <p>Create Lists</p>
+                </a>
+
+                <a
+                    href="#using-lists"
+                    class="progress-item"
+                >
+                    <span>05</span>
+                    <p>Use Lists</p>
+                </a>
+
+                <a
+                    href="#practice"
+                    class="progress-item"
+                >
+                    <span>06</span>
+                    <p>Practice</p>
+                </a>
+
+                <a
+                    href="#mini-challenge"
+                    class="progress-item"
+                >
+                    <span>07</span>
+                    <p>Challenge</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Overview -->
+        <section
+            class="section lesson-overview-section"
+            id="lesson-start"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lesson Overview
+                        </p>
+
+                        <h2>
+                            What will you learn?
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        By the end of this lesson, you will be able to
+                        store a collection of values, access individual
+                        list items, change a list, and use a loop to
+                        process every item.
+                    </p>
+
+                </div>
+
+                <div class="lesson-goal-grid">
+
+                    <article class="lesson-goal-card goal-card-red">
+
+                        <div class="lesson-goal-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Create Collections
+                        </h3>
+
+                        <p>
+                            Store several related values inside one
+                            organized Python list.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-purple">
+
+                        <div class="lesson-goal-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Access List Items
+                        </h3>
+
+                        <p>
+                            Use an item's index position to retrieve
+                            information from a list.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-blue">
+
+                        <div class="lesson-goal-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Update and Repeat
+                        </h3>
+
+                        <p>
+                            Add new items and loop through every value
+                            stored in a list.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <aside class="before-you-begin">
+
+                    <div class="before-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p class="before-label">
+                            Before You Begin
+                        </p>
+
+                        <h3>
+                            Complete Python Lessons 1 through 4 first.
+                        </h3>
+
+                        <p>
+                            Lists combine variables, strings, numbers,
+                            print statements, and loops. Review those
+                            lessons if you need extra practice.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Presentation and Learning Guide -->
+        <section
+            class="section lesson-media-section"
+            id="presentation"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Learn the Lesson
+                        </p>
+
+                        <h2>
+                            Review the slides and follow along.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Study the original class presentation before
+                        completing the examples and practice activities.
+                    </p>
+
+                </div>
+
+                <div class="lesson-media-grid">
+
+                    <!-- Presentation -->
+                    <article class="lesson-media-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon presentation-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Lesson Slides
+                                </p>
+
+                                <h3>
+                                    Class Presentation
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="embedded-presentation">
+
+                            <iframe
+                                src="https://docs.google.com/presentation/d/e/2PACX-1vQSpY57jpgpjrBiDXp5Ky3_DsMGIH3bpwLYhA0oMIRGxokE6f9rY_3uZVPHI2yml7Y6_NCyUg0QVSxq/pubembed?start=false&loop=false&delayms=3000"
+                                frameborder="0"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Python Lesson 5 Presentation"
+                            ></iframe>
+
+                        </div>
+
+                        <p class="media-description">
+                            Follow along with the original YMCA Code
+                            Academy Lesson 5 presentation and review
+                            each list example at your own pace.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vQSpY57jpgpjrBiDXp5Ky3_DsMGIH3bpwLYhA0oMIRGxokE6f9rY_3uZVPHI2yml7Y6_NCyUg0QVSxq/pub?start=false&loop=false&delayms=3000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Full Presentation
+                        </a>
+
+                    </article>
+
+                    <!-- Independent Learning Guide -->
+                    <article class="lesson-media-card learning-guide-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon guide-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Learning Guide
+                                </p>
+
+                                <h3>
+                                    How to Complete This Lesson
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lesson-guide-steps">
+
+                            <div class="lesson-guide-step">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h4>
+                                        Identify the Collection
+                                    </h4>
+
+                                    <p>
+                                        Decide which related pieces of
+                                        information belong together.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h4>
+                                        Create the List
+                                    </h4>
+
+                                    <p>
+                                        Place the values inside square
+                                        brackets and separate them with
+                                        commas.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h4>
+                                        Use the Index
+                                    </h4>
+
+                                    <p>
+                                        Remember that the first item is
+                                        stored at index zero.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h4>
+                                        Process Every Item
+                                    </h4>
+
+                                    <p>
+                                        Use a for loop when the same
+                                        action should happen to every
+                                        value.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="#lesson-vocabulary"
+                            class="button lesson-guide-button"
+                        >
+                            Continue the Lesson
+                            <span>↓</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Vocabulary -->
+        <section
+            class="section vocabulary-section"
+            id="lesson-vocabulary"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Key Vocabulary
+                        </p>
+
+                        <h2>
+                            Words that explain Python collections.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These terms describe how lists store, organize,
+                        and provide access to multiple values.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            01
+                        </div>
+
+                        <h3>
+                            List
+                        </h3>
+
+                        <p>
+                            An ordered collection that stores multiple
+                            values inside one variable.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Item
+                        </h3>
+
+                        <p>
+                            One individual value stored inside a list.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Index
+                        </h3>
+
+                        <p>
+                            The numbered position of an item inside a
+                            list.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Square Brackets
+                        </h3>
+
+                        <p>
+                            The <code>[ ]</code> symbols used to create
+                            a list and access its items.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Append
+                        </h3>
+
+                        <p>
+                            To add a new item to the end of an existing
+                            list.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Length
+                        </h3>
+
+                        <p>
+                            The total number of items stored inside a
+                            list.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Creating Lists -->
+        <section
+            class="section concept-section print-concept-section"
+            id="creating-lists"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 01
+                    </p>
+
+                    <p class="section-label">
+                        Creating Lists
+                    </p>
+
+                    <h2>
+                        Store several values inside one variable.
+                    </h2>
+
+                    <p>
+                        A normal variable stores one value. A list lets
+                        one variable store an entire collection of
+                        related values.
+                    </p>
+
+                    <p>
+                        Place the items inside square brackets and
+                        separate each item with a comma.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Structure</span>
+
+                        <p>
+                            Write the variable name, an equals sign,
+                            and the list items inside square brackets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 1
+                            </p>
+
+                            <span>
+                                A List of Strings
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        colors
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-symbol">[</span><span
+                                        class="code-string"
+                                    >"red"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "blue"
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "green"
+                                    </span><span
+                                        class="code-symbol"
+                                    >]</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Stored Values</p>
+
+                            <strong>
+                                red, blue, green
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 2
+                            </p>
+
+                            <span>
+                                A List of Numbers
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        scores
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-symbol">[</span><span
+                                        class="code-number"
+                                    >8</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-number">
+                                        10
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-number">
+                                        7
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-number">
+                                        9
+                                    </span><span
+                                        class="code-symbol"
+                                    >]</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Number of Items</p>
+
+                            <strong>
+                                4 scores
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Try It Yourself -->
+        <section class="section try-it-section">
+
+            <div class="container">
+
+                <div class="try-it-card">
+
+                    <div class="try-it-heading">
+
+                        <div class="try-it-label">
+                            Try It Yourself
+                        </div>
+
+                        <h2>
+                            Create a list of three hobbies.
+                        </h2>
+
+                        <p>
+                            Create a variable named
+                            <code>hobbies</code> that stores these three
+                            strings:
+                        </p>
+
+                        <blockquote>
+                            "coding", "drawing", "sports"
+                        </blockquote>
+
+                    </div>
+
+                    <div class="try-it-editor">
+
+                        <div class="try-editor-top">
+
+                            <p>your_code.py</p>
+
+                            <span>Practice</span>
+
+                        </div>
+
+                        <label
+                            for="list-practice-input"
+                            class="sr-only"
+                        >
+                            Type your Python list
+                        </label>
+
+                        <textarea
+                            id="list-practice-input"
+                            class="practice-code-input"
+                            spellcheck="false"
+                            placeholder="Type your code here..."
+                        ></textarea>
+
+                        <div class="try-it-actions">
+
+                            <button
+                                type="button"
+                                class="check-code-button"
+                                id="check-list-answer"
+                            >
+                                Check My Code
+                            </button>
+
+                            <button
+                                type="button"
+                                class="show-answer-button"
+                                id="show-list-answer"
+                            >
+                                Show Answer
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="practice-feedback"
+                            id="list-feedback"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Index Positions -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Index Positions
+                        </p>
+
+                        <h2>
+                            Python begins counting at zero.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Every list item has a numbered position. Use
+                        that index number inside square brackets to
+                        access one item.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            0
+                        </div>
+
+                        <div>
+
+                            <p>First Item</p>
+
+                            <code>
+                                colors[0]
+                            </code>
+
+                            <span>
+                                Accesses "red".
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            1
+                        </div>
+
+                        <div>
+
+                            <p>Second Item</p>
+
+                            <code>
+                                colors[1]
+                            </code>
+
+                            <span>
+                                Accesses "blue".
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            2
+                        </div>
+
+                        <div>
+
+                            <p>Third Item</p>
+
+                            <code>
+                                colors[2]
+                            </code>
+
+                            <span>
+                                Accesses "green".
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            !
+                        </div>
+
+                        <div>
+
+                            <p>Common Mistake</p>
+
+                            <code>
+                                colors[3]
+                            </code>
+
+                            <span>
+                                This causes an error because the list
+                                has no fourth item.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Using Lists -->
+        <section
+            class="section concept-section variable-concept-section"
+            id="using-lists"
+        >
+
+            <div class="container concept-layout reverse-concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 02
+                    </p>
+
+                    <p class="section-label">
+                        Using and Updating Lists
+                    </p>
+
+                    <h2>
+                        Access, add, and process list items.
+                    </h2>
+
+                    <p>
+                        You can access one item with its index, add a
+                        new item with <code>append()</code>, or use a
+                        loop to process every item.
+                    </p>
+
+                    <p>
+                        Lists work especially well with for loops
+                        because Python can visit each stored value in
+                        order.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Remember</span>
+
+                        <p>
+                            The name after <code>for</code> represents
+                            one item during each loop iteration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 3
+                            </p>
+
+                            <span>
+                                Accessing an Item
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        games
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-symbol">[</span><span
+                                        class="code-string"
+                                    >"Maze"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Trivia"
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Adventure"
+                                    </span><span
+                                        class="code-symbol"
+                                    >]</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-variable"
+                                    >games</span><span
+                                        class="code-symbol"
+                                    >[</span><span
+                                        class="code-number"
+                                    >1</span><span
+                                        class="code-symbol"
+                                    >])</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>
+                                Trivia
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 4
+                            </p>
+
+                            <span>
+                                Adding an Item
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        games
+                                    </span><span
+                                        class="code-symbol"
+                                    >.</span><span
+                                        class="code-function"
+                                    >append</span><span
+                                        class="code-symbol"
+                                    >(</span><span
+                                        class="code-string"
+                                    >"Racing"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-variable"
+                                    >games</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Updated List</p>
+
+                            <strong>
+                                Maze, Trivia, Adventure, Racing
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Loop Through a List -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lists and Loops
+                        </p>
+
+                        <h2>
+                            Perform an action for every item.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        A for loop can move through the list in order
+                        and temporarily store each item inside a loop
+                        variable.
+                    </p>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 5
+                            </p>
+
+                            <span>
+                                Looping Through Student Names
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        students
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-symbol">[</span><span
+                                        class="code-string"
+                                    >"Maya"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Jordan"
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Luis"
+                                    </span><span
+                                        class="code-symbol"
+                                    >]</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        for
+                                    </span>
+
+                                    <span class="code-variable">
+                                        student
+                                    </span>
+
+                                    <span class="code-purple">
+                                        in
+                                    </span>
+
+                                    <span class="code-variable">
+                                        students
+                                    </span><span
+                                        class="code-symbol"
+                                    >:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span
+                                        class="code-symbol"
+                                    >(</span><span
+                                        class="code-string"
+                                    >"Welcome,"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-variable">
+                                        student
+                                    </span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>Welcome, Maya</strong>
+                            <br>
+                            <strong>Welcome, Jordan</strong>
+                            <br>
+                            <strong>Welcome, Luis</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Common List Mistakes -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Common List Mistakes
+                        </p>
+
+                        <h2>
+                            Check the brackets, commas, and indexes.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Most beginner list errors come from missing
+                        punctuation or requesting an index that does
+                        not exist.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct Brackets</p>
+
+                            <code>
+                                pets = ["cat", "dog"]
+                            </code>
+
+                            <span>
+                                List items are inside square brackets.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct Commas</p>
+
+                            <code>
+                                scores = [5, 8, 10]
+                            </code>
+
+                            <span>
+                                Each item is separated by a comma.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Missing Comma</p>
+
+                            <code>
+                                pets = ["cat" "dog"]
+                            </code>
+
+                            <span>
+                                Add a comma between the strings.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Invalid Index</p>
+
+                            <code>
+                                pets[2]
+                            </code>
+
+                            <span>
+                                A two-item list only uses indexes 0 and 1.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Practice Quiz -->
+        <section
+            class="section practice-section"
+            id="practice"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Practice Quiz
+                        </p>
+
+                        <h2>
+                            Check your understanding of lists.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Answer all four questions, then check your
+                        score. You can review the lesson and try again
+                        whenever needed.
+                    </p>
+
+                </div>
+
+                <form
+                    class="practice-quiz"
+                    id="lesson-five-quiz"
+                >
+
+                    <!-- Question 1 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>01</span>
+                            Which code correctly creates a Python list?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-1"
+                                value="a"
+                            >
+
+                            <span>
+                                colors = ("red", "blue", "green")
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-1"
+                                value="b"
+                            >
+
+                            <span>
+                                colors = ["red", "blue", "green"]
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-1"
+                                value="c"
+                            >
+
+                            <span>
+                                colors = "red", "blue", "green"
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 2 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>02</span>
+                            Which index accesses the first item?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-2"
+                                value="a"
+                            >
+
+                            <span>0</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-2"
+                                value="b"
+                            >
+
+                            <span>1</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-2"
+                                value="c"
+                            >
+
+                            <span>-1</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 3 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>03</span>
+                            What does append() do?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-3"
+                                value="a"
+                            >
+
+                            <span>
+                                Deletes the entire list
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-3"
+                                value="b"
+                            >
+
+                            <span>
+                                Prints every list item
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-3"
+                                value="c"
+                            >
+
+                            <span>
+                                Adds an item to the end of a list
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 4 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            <span>04</span>
+                            What is the best way to process every item
+                            in a list?
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-4"
+                                value="a"
+                            >
+
+                            <span>
+                                Use a for loop
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-4"
+                                value="b"
+                            >
+
+                            <span>
+                                Create a separate variable for every item
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-five-question-4"
+                                value="c"
+                            >
+
+                            <span>
+                                Place the list inside quotation marks
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <button
+                        type="submit"
+                        class="button button-primary quiz-submit-button"
+                    >
+                        Check My Score
+                    </button>
+
+                    <div
+                        class="quiz-result"
+                        id="lesson-five-quiz-result"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Mini Challenge -->
+        <section
+            class="section mini-challenge-section"
+            id="mini-challenge"
+        >
+
+            <div class="container">
+
+                <div class="mini-challenge-card">
+
+                    <div class="challenge-badge">
+                        Final Activity
+                    </div>
+
+                    <div class="mini-challenge-layout">
+
+                        <div class="mini-challenge-copy">
+
+                            <p class="section-label">
+                                Mini Coding Challenge
+                            </p>
+
+                            <h2>
+                                Create a coding project menu.
+                            </h2>
+
+                            <p>
+                                Build a list of project choices and use
+                                a loop to display every option to the
+                                user.
+                            </p>
+
+                            <div class="challenge-requirements">
+
+                                <p>
+                                    <span>1</span>
+                                    Create a list named projects.
+                                </p>
+
+                                <p>
+                                    <span>2</span>
+                                    Store at least three project names.
+                                </p>
+
+                                <p>
+                                    <span>3</span>
+                                    Add one more project with append().
+                                </p>
+
+                                <p>
+                                    <span>4</span>
+                                    Use a for loop to visit every item.
+                                </p>
+
+                                <p>
+                                    <span>5</span>
+                                    Print each project as a menu option.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="challenge-example">
+
+                            <div class="challenge-example-top">
+
+                                <p>
+                                    Example Structure
+                                </p>
+
+                                <span>
+                                    Customize the project choices
+                                </span>
+
+                            </div>
+
+                            <div class="challenge-code">
+
+                                <p>
+                                    <span class="code-variable">
+                                        projects
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-symbol">[</span><span
+                                        class="code-string"
+                                    >"Quiz"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Game"
+                                    </span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-string">
+                                        "Story"
+                                    </span><span
+                                        class="code-symbol"
+                                    >]</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        projects
+                                    </span><span
+                                        class="code-symbol"
+                                    >.</span><span
+                                        class="code-function"
+                                    >append</span><span
+                                        class="code-symbol"
+                                    >(</span><span
+                                        class="code-string"
+                                    >"Calculator"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        for
+                                    </span>
+
+                                    <span class="code-variable">
+                                        project
+                                    </span>
+
+                                    <span class="code-purple">
+                                        in
+                                    </span>
+
+                                    <span class="code-variable">
+                                        projects
+                                    </span><span
+                                        class="code-symbol"
+                                    >:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span
+                                        class="code-symbol"
+                                    >(</span><span
+                                        class="code-string"
+                                    >"-"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-variable">
+                                        project
+                                    </span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Completion -->
+        <section class="section lesson-complete-section">
+
+            <div class="container lesson-complete-layout">
+
+                <div class="completion-symbol">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p class="section-label">
+                        Lesson Complete
+                    </p>
+
+                    <h2>
+                        You can now organize information with lists.
+                    </h2>
+
+                    <p>
+                        You learned how to create lists, access items
+                        with indexes, add values with append(), and
+                        loop through an entire collection.
+                    </p>
+
+                </div>
+
+                <div class="completion-actions">
+
+                    <button
+                        type="button"
+                        class="button button-primary"
+                        id="complete-lesson-button"
+                    >
+                        Mark Lesson Complete
+                    </button>
+
+                    <a
+                        href="learn.html"
+                        class="button completion-secondary-button"
+                    >
+                        Return to Lesson Library
+                    </a>
+
+                    <p
+                        class="completion-message"
+                        id="completion-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <p class="footer-logo">
+                    YMCA Code Academy
+                </p>
+
+                <p>
+                    A volunteer-led youth coding program based at the
+                    Paterson YMCA.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Website created by a high school volunteer who
+                    founded and teaches YMCA Code Academy.
+                </p>
+
+                <p class="footer-note">
+                    This website is not operated by the YMCA of the USA.
+                </p>
+
+                <p>
+                    © <span id="current-year"></span>
+                    YMCA Code Academy
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

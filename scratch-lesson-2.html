@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Build an interactive Scratch clicker game using events, variables, scoring, timers, and game rules with YMCA Code Academy."
+    >
+
+    <title>
+        Scratch Lesson 2: Build a Clicker Game
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lesson-page scratch-lesson-two-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                YMCA <span>Code Academy</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="learn.html" class="active-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="challenge.html">
+                        Code Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Student Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Lesson Hero -->
+        <section class="lesson-hero">
+
+            <div class="lesson-hero-grid"></div>
+
+            <div class="lesson-hero-glow lesson-glow-one"></div>
+            <div class="lesson-hero-glow lesson-glow-two"></div>
+
+            <div class="container">
+
+                <nav
+                    class="lesson-breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="learn.html">
+                        Learn
+                    </a>
+
+                    <span>→</span>
+
+                    <a href="learn.html#scratch-lessons">
+                        Scratch
+                    </a>
+
+                    <span>→</span>
+
+                    <p>Lesson 2</p>
+
+                </nav>
+
+                <div class="lesson-hero-layout">
+
+                    <div class="lesson-hero-copy">
+
+                        <div class="lesson-hero-labels">
+
+                            <span class="lesson-course-label">
+                                Scratch
+                            </span>
+
+                            <span class="lesson-level-label">
+                                Beginner
+                            </span>
+
+                            <span class="lesson-time-label">
+                                40–50 Minutes
+                            </span>
+
+                        </div>
+
+                        <p class="lesson-number-label">
+                            Scratch Lesson 02
+                        </p>
+
+                        <h1>
+                            Build an Interactive
+                            <span>Clicker Game</span>
+                        </h1>
+
+                        <p class="lesson-hero-description">
+                            Turn a Scratch project into a game by
+                            detecting clicks, tracking points, moving
+                            a target, and challenging the player to
+                            score before time runs out.
+                        </p>
+
+                        <div class="lesson-hero-actions">
+
+                            <a
+                                href="#lesson-start"
+                                class="button button-primary lesson-start-button"
+                            >
+                                Start Lesson
+                                <span>↓</span>
+                            </a>
+
+                            <a
+                                href="learn.html#scratch-lessons"
+                                class="lesson-back-link"
+                            >
+                                ← Return to Scratch Lessons
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Scratch Block Preview -->
+                    <div class="lesson-hero-code">
+
+                        <div class="lesson-code-window">
+
+                            <div class="lesson-code-top">
+
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <p>clicker_game.sb3</p>
+
+                            </div>
+
+                            <div class="lesson-code-body">
+
+                                <p>
+                                    <span class="code-comment">
+                                        Start the game
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when green flag clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        set score to 0
+                                    </span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when this sprite clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-number">
+                                        change score by 1
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        go to random position
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-string">
+                                        play sound pop
+                                    </span>
+                                </p>
+
+                            </div>
+
+                            <div class="lesson-code-output">
+
+                                <p>
+                                    <span>▶</span>
+                                    Game Result
+                                </p>
+
+                                <strong>
+                                    Click the target to earn points.
+                                </strong>
+
+                                <strong>
+                                    The target moves after every click.
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Progress Navigation -->
+        <section class="lesson-progress-bar">
+
+            <div class="container lesson-progress-layout">
+
+                <a
+                    href="#lesson-start"
+                    class="progress-item active-progress"
+                >
+                    <span>01</span>
+                    <p>Overview</p>
+                </a>
+
+                <a
+                    href="#presentation"
+                    class="progress-item"
+                >
+                    <span>02</span>
+                    <p>Presentation</p>
+                </a>
+
+                <a
+                    href="#lesson-vocabulary"
+                    class="progress-item"
+                >
+                    <span>03</span>
+                    <p>Vocabulary</p>
+                </a>
+
+                <a
+                    href="#click-events"
+                    class="progress-item"
+                >
+                    <span>04</span>
+                    <p>Clicks</p>
+                </a>
+
+                <a
+                    href="#score-timer"
+                    class="progress-item"
+                >
+                    <span>05</span>
+                    <p>Score</p>
+                </a>
+
+                <a
+                    href="#practice"
+                    class="progress-item"
+                >
+                    <span>06</span>
+                    <p>Practice</p>
+                </a>
+
+                <a
+                    href="#mini-challenge"
+                    class="progress-item"
+                >
+                    <span>07</span>
+                    <p>Challenge</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Overview -->
+        <section
+            class="section lesson-overview-section"
+            id="lesson-start"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lesson Overview
+                        </p>
+
+                        <h2>
+                            What will you learn?
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        By the end of this lesson, you will be able to
+                        detect when a sprite is clicked, store a score
+                        in a variable, move a target, and create rules
+                        for an interactive game.
+                    </p>
+
+                </div>
+
+                <div class="lesson-goal-grid">
+
+                    <article class="lesson-goal-card goal-card-red">
+
+                        <div class="lesson-goal-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Detect Player Actions
+                        </h3>
+
+                        <p>
+                            Use click events to make the project respond
+                            when the player selects a sprite.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-purple">
+
+                        <div class="lesson-goal-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Track the Score
+                        </h3>
+
+                        <p>
+                            Create a variable that remembers how many
+                            successful clicks the player has made.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-blue">
+
+                        <div class="lesson-goal-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Create a Game Challenge
+                        </h3>
+
+                        <p>
+                            Add movement, timing, sound, and game rules
+                            that make each round more exciting.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <aside class="before-you-begin">
+
+                    <div class="before-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p class="before-label">
+                            Before You Begin
+                        </p>
+
+                        <h3>
+                            Complete Scratch Lesson 1 first.
+                        </h3>
+
+                        <p>
+                            This lesson uses sprites, the stage, events,
+                            motion blocks, looks blocks, and connected
+                            scripts from the first Scratch lesson.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Presentation -->
+        <section
+            class="section lesson-media-section"
+            id="presentation"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Learn the Lesson
+                        </p>
+
+                        <h2>
+                            Review the slides and follow along.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Study the original Scratch Lesson 2
+                        presentation before building the game and
+                        completing the activities below.
+                    </p>
+
+                </div>
+
+                <div class="lesson-media-grid">
+
+                    <article class="lesson-media-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon presentation-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Lesson Slides
+                                </p>
+
+                                <h3>
+                                    Class Presentation
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="embedded-presentation">
+
+                            <iframe
+                                src="https://docs.google.com/presentation/d/e/2PACX-1vSe1hIDGX92S9ApTgz6APnaJirWrOS8uu4hwmmuADme6qaIsHvT-v2FXd1c1AwQjpbKSwTfSA3amfg7/pubembed?start=false&loop=false&delayms=3000"
+                                frameborder="0"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Scratch Lesson 2 Presentation"
+                            ></iframe>
+
+                        </div>
+
+                        <p class="media-description">
+                            Follow the original YMCA Code Academy
+                            Scratch Lesson 2 presentation and review
+                            the click-event, score, and game examples.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vSe1hIDGX92S9ApTgz6APnaJirWrOS8uu4hwmmuADme6qaIsHvT-v2FXd1c1AwQjpbKSwTfSA3amfg7/pub?start=false&loop=false&delayms=3000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Full Presentation
+                        </a>
+
+                    </article>
+
+                    <!-- Independent Learning Guide -->
+                    <article class="lesson-media-card learning-guide-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon guide-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Learning Guide
+                                </p>
+
+                                <h3>
+                                    How to Complete This Lesson
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lesson-guide-steps">
+
+                            <div class="lesson-guide-step">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h4>
+                                        Choose the Target
+                                    </h4>
+
+                                    <p>
+                                        Select the sprite that the
+                                        player will try to click.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h4>
+                                        Create the Score
+                                    </h4>
+
+                                    <p>
+                                        Make a variable that begins at
+                                        zero whenever the game starts.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h4>
+                                        Program the Click
+                                    </h4>
+
+                                    <p>
+                                        Increase the score and move the
+                                        target after it is clicked.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h4>
+                                        Add the Game Rules
+                                    </h4>
+
+                                    <p>
+                                        Add a timer, winning score,
+                                        sounds, or difficulty changes.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="#lesson-vocabulary"
+                            class="button lesson-guide-button"
+                        >
+                            Continue the Lesson
+                            <span>↓</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Vocabulary -->
+        <section
+            class="section vocabulary-section"
+            id="lesson-vocabulary"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Key Vocabulary
+                        </p>
+
+                        <h2>
+                            Words that explain interactive games.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These terms describe how the game responds to
+                        the player, remembers information, and controls
+                        what happens during each round.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">01</div>
+
+                        <h3>
+                            Click Event
+                        </h3>
+
+                        <p>
+                            An event that starts a script when the
+                            player clicks a sprite.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">02</div>
+
+                        <h3>
+                            Variable
+                        </h3>
+
+                        <p>
+                            A named place where a project stores
+                            information that can change.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">03</div>
+
+                        <h3>
+                            Score
+                        </h3>
+
+                        <p>
+                            A number that tracks the player's points
+                            or progress during a game.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">04</div>
+
+                        <h3>
+                            Timer
+                        </h3>
+
+                        <p>
+                            A value that measures how much time has
+                            passed since the project began.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">05</div>
+
+                        <h3>
+                            Random Position
+                        </h3>
+
+                        <p>
+                            A location chosen automatically from
+                            different possible places on the stage.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">06</div>
+
+                        <h3>
+                            Game Rule
+                        </h3>
+
+                        <p>
+                            A condition that determines how the player
+                            earns points, wins, loses, or finishes.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Click Events -->
+        <section
+            class="section concept-section print-concept-section"
+            id="click-events"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 01
+                    </p>
+
+                    <p class="section-label">
+                        Click Events
+                    </p>
+
+                    <h2>
+                        Make the target respond to the player.
+                    </h2>
+
+                    <p>
+                        The
+                        <code>when this sprite clicked</code>
+                        event starts a script whenever the player
+                        clicks the selected sprite.
+                    </p>
+
+                    <p>
+                        Every block connected beneath the event runs
+                        in order. The target can earn a point, play a
+                        sound, change appearance, and move.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Important</span>
+
+                        <p>
+                            Add the click-event script to the target
+                            sprite, not to the stage or another
+                            character.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 1
+                            </p>
+
+                            <span>
+                                Detecting a Click
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when this sprite clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-string">
+                                        say "You found me!" for 1 second
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Result</p>
+
+                            <strong>
+                                The target displays a message when
+                                clicked.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 2
+                            </p>
+
+                            <span>
+                                Moving the Target
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when this sprite clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        go to random position
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Result</p>
+
+                            <strong>
+                                The player must find the target again.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Score and Timer -->
+        <section
+            class="section concept-section alternate-section"
+            id="score-timer"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 02
+                    </p>
+
+                    <p class="section-label">
+                        Score and Time
+                    </p>
+
+                    <h2>
+                        Remember points and control each round.
+                    </h2>
+
+                    <p>
+                        A score variable stores the number of points
+                        earned by the player. Set it to zero at the
+                        beginning of every new game.
+                    </p>
+
+                    <p>
+                        After the target is clicked, use
+                        <code>change score by 1</code>
+                        to increase the score.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Game Setup</span>
+
+                        <p>
+                            Reset the score when the green flag is
+                            clicked so every player begins with the
+                            same starting score.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Start Script
+                            </p>
+
+                            <span>
+                                Resetting the Score
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when green flag clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        set score to 0
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        go to random position
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Beginning of Game</p>
+
+                            <strong>
+                                Score: 0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Click Script
+                            </p>
+
+                            <span>
+                                Awarding a Point
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        when this sprite clicked
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        change score by 1
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-string">
+                                        play sound pop until done
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        go to random position
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>After One Click</p>
+
+                            <strong>
+                                Score: 1
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Building the Game -->
+        <section class="section concept-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Build the Complete Game
+                        </p>
+
+                        <h2>
+                            Connect the game systems together.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        A complete clicker game needs a starting script,
+                        a click script, a score, movement, and a clear
+                        ending rule.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">01</div>
+
+                        <h3>
+                            Start the Round
+                        </h3>
+
+                        <p>
+                            Use the green flag to reset the score and
+                            prepare the target.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">02</div>
+
+                        <h3>
+                            Award Points
+                        </h3>
+
+                        <p>
+                            Increase the score whenever the correct
+                            sprite is clicked.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">03</div>
+
+                        <h3>
+                            Move the Target
+                        </h3>
+
+                        <p>
+                            Send the sprite to a new position after
+                            every successful click.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">04</div>
+
+                        <h3>
+                            Add Feedback
+                        </h3>
+
+                        <p>
+                            Use sounds, size changes, or costumes to
+                            show that the click was successful.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">05</div>
+
+                        <h3>
+                            Increase Difficulty
+                        </h3>
+
+                        <p>
+                            Make the target smaller, faster, or harder
+                            to find as the score increases.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">06</div>
+
+                        <h3>
+                            End the Game
+                        </h3>
+
+                        <p>
+                            Stop the round after a time limit or when
+                            the player reaches the winning score.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="section mistakes-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Common Mistakes
+                        </p>
+
+                        <h2>
+                            Check these problems before testing again.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Scratch games often stop working because one
+                        block is attached to the wrong sprite or is
+                        placed in the wrong script.
+                    </p>
+
+                </div>
+
+                <div class="mistake-grid">
+
+                    <article class="mistake-card">
+
+                        <div class="mistake-symbol">!</div>
+
+                        <div>
+
+                            <h3>
+                                The score does not reset
+                            </h3>
+
+                            <p>
+                                Place
+                                <code>set score to 0</code>
+                                under the green-flag event.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="mistake-card">
+
+                        <div class="mistake-symbol">!</div>
+
+                        <div>
+
+                            <h3>
+                                Clicking does nothing
+                            </h3>
+
+                            <p>
+                                Make sure the target sprite contains
+                                the
+                                <code>when this sprite clicked</code>
+                                event.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="mistake-card">
+
+                        <div class="mistake-symbol">!</div>
+
+                        <div>
+
+                            <h3>
+                                The target never moves
+                            </h3>
+
+                            <p>
+                                Connect
+                                <code>go to random position</code>
+                                beneath the click event.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="mistake-card">
+
+                        <div class="mistake-symbol">!</div>
+
+                        <div>
+
+                            <h3>
+                                The game is too easy
+                            </h3>
+
+                            <p>
+                                Make the target smaller, add a time
+                                limit, or move it more frequently.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Interactive Practice -->
+        <section
+            class="section interactive-practice-section"
+            id="practice"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Try It Yourself
+                        </p>
+
+                        <h2>
+                            Put the clicker-game blocks in order.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Enter the numbers in the order the blocks should
+                        run after the player clicks the target.
+                    </p>
+
+                </div>
+
+                <div class="practice-workspace">
+
+                    <div class="practice-instructions">
+
+                        <p class="practice-label">
+                            Block Order Activity
+                        </p>
+
+                        <h3>
+                            What should happen after a successful click?
+                        </h3>
+
+                        <div class="practice-task">
+
+                            <p>
+                                <strong>1.</strong>
+                                Go to a random position
+                            </p>
+
+                            <p>
+                                <strong>2.</strong>
+                                When this sprite clicked
+                            </p>
+
+                            <p>
+                                <strong>3.</strong>
+                                Change score by 1
+                            </p>
+
+                            <p>
+                                <strong>4.</strong>
+                                Play sound pop
+                            </p>
+
+                        </div>
+
+                        <p>
+                            Type the four numbers separated by commas.
+                        </p>
+
+                    </div>
+
+                    <div class="practice-editor">
+
+                        <label for="scratch-two-order-input">
+                            Enter the correct block order:
+                        </label>
+
+                        <textarea
+                            id="scratch-two-order-input"
+                            rows="5"
+                            spellcheck="false"
+                            placeholder="Example: 2, 3, 4, 1"
+                        ></textarea>
+
+                        <div class="practice-buttons">
+
+                            <button
+                                type="button"
+                                class="button button-primary"
+                                id="check-scratch-two-order"
+                            >
+                                Check Answer
+                            </button>
+
+                            <button
+                                type="button"
+                                class="button button-dark"
+                                id="show-scratch-two-order"
+                            >
+                                Show Answer
+                            </button>
+
+                        </div>
+
+                        <p
+                            class="practice-feedback"
+                            id="scratch-two-order-feedback"
+                            aria-live="polite"
+                        ></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Quiz -->
+        <section class="section practice-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Check Your Understanding
+                        </p>
+
+                        <h2>
+                            Scratch Lesson 2 Quiz
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Answer all four questions before checking your
+                        score.
+                    </p>
+
+                </div>
+
+                <form
+                    class="practice-quiz"
+                    id="scratch-two-quiz"
+                >
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            1. Which event should begin the target's
+                            click script?
+                        </legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-1"
+                                value="a"
+                            >
+                            When green flag clicked
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-1"
+                                value="b"
+                            >
+                            When this sprite clicked
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-1"
+                                value="c"
+                            >
+                            When backdrop switches
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            2. Why should the score be set to zero when
+                            the game begins?
+                        </legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-2"
+                                value="a"
+                            >
+                            So each new game begins fairly
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-2"
+                                value="b"
+                            >
+                            So the target becomes invisible
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-2"
+                                value="c"
+                            >
+                            So the green flag disappears
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            3. Which block makes the target appear in a
+                            different place after each click?
+                        </legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-3"
+                                value="a"
+                            >
+                            Wait one second
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-3"
+                                value="b"
+                            >
+                            Next costume
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-3"
+                                value="c"
+                            >
+                            Go to random position
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+                            4. Which change would make the clicker game
+                            more difficult?
+                        </legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-4"
+                                value="a"
+                            >
+                            Making the target smaller
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-4"
+                                value="b"
+                            >
+                            Removing the score
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="scratch-two-question-4"
+                                value="c"
+                            >
+                            Keeping the target in one place
+                        </label>
+
+                    </fieldset>
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                    >
+                        Check My Score
+                    </button>
+
+                    <p
+                        class="quiz-result"
+                        id="scratch-two-quiz-result"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Mini Challenge -->
+        <section
+            class="section mini-challenge-section"
+            id="mini-challenge"
+        >
+
+            <div class="container mini-challenge-layout">
+
+                <div class="challenge-number">
+                    02
+                </div>
+
+                <div class="mini-challenge-copy">
+
+                    <p class="section-label">
+                        Lesson Project
+                    </p>
+
+                    <h2>
+                        Build your own timed clicker game.
+                    </h2>
+
+                    <p>
+                        Create a complete Scratch game in which the
+                        player clicks a moving target to earn as many
+                        points as possible.
+                    </p>
+
+                    <div class="challenge-requirements">
+
+                        <div>
+                            <span>01</span>
+
+                            <p>
+                                Choose or design a target sprite.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+
+                            <p>
+                                Create a score variable and reset it to
+                                zero when the green flag is clicked.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+
+                            <p>
+                                Increase the score whenever the target
+                                is clicked.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>04</span>
+
+                            <p>
+                                Move the target to a random position
+                                after every click.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>05</span>
+
+                            <p>
+                                Add sound, costumes, size changes, or
+                                another form of player feedback.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>06</span>
+
+                            <p>
+                                Add a time limit or winning score that
+                                ends the round.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <aside class="challenge-tip-card">
+
+                    <p class="challenge-tip-label">
+                        Extra Challenge
+                    </p>
+
+                    <h3>
+                        Make the game harder as the score increases.
+                    </h3>
+
+                    <p>
+                        Reduce the sprite's size, shorten the amount of
+                        time available, add a second target, or subtract
+                        points when the player clicks the wrong sprite.
+                    </p>
+
+                    <div class="challenge-example">
+
+                        <p>Possible Game Rule</p>
+
+                        <strong>
+                            Reach 15 points before the timer reaches
+                            30 seconds.
+                        </strong>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Completion -->
+        <section class="section lesson-completion-section">
+
+            <div class="container lesson-completion-card">
+
+                <div class="completion-icon">
+                    ✓
+                </div>
+
+                <div class="completion-copy">
+
+                    <p class="section-label">
+                        Lesson Complete
+                    </p>
+
+                    <h2>
+                        You built the systems behind a Scratch game.
+                    </h2>
+
+                    <p>
+                        You learned how click events, variables, scores,
+                        movement, timers, and rules work together to
+                        create an interactive experience.
+                    </p>
+
+                    <p
+                        class="completion-message"
+                        id="completion-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+                <div class="completion-actions">
+
+                    <button
+                        type="button"
+                        class="button button-primary"
+                        id="complete-lesson-button"
+                    >
+                        Mark Lesson Complete
+                    </button>
+
+                    <a
+                        href="learn.html#scratch-lessons"
+                        class="button button-dark"
+                    >
+                        Return to Lessons
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <p class="footer-logo">
+                    YMCA Code Academy
+                </p>
+
+                <p>
+                    Free coding education, creative projects, and
+                    community opportunities for young learners.
+                </p>
+
+                <p class="footer-note">
+                    YMCA Code Academy was created by a high school
+                    student volunteer and is based at the Paterson
+                    YMCA. This independent educational website is not
+                    operated by YMCA of the USA.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    © <span id="current-year"></span>
+                    YMCA Code Academy
+                </p>
+
+                <p class="footer-note">
+                    Created for educational and community purposes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

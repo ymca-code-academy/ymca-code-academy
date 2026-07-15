@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Learn how to ask questions, collect answers, and use user input in Python with YMCA Code Academy."
+    >
+
+    <title>
+        Python Lesson 2: User Input
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lesson-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                YMCA <span>Code Academy</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="learn.html" class="active-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="challenge.html">
+                        Code Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Student Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Lesson Hero -->
+        <section class="lesson-hero">
+
+            <div class="lesson-hero-grid"></div>
+
+            <div class="lesson-hero-glow lesson-glow-one"></div>
+            <div class="lesson-hero-glow lesson-glow-two"></div>
+
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <nav
+                    class="lesson-breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="learn.html">
+                        Learn
+                    </a>
+
+                    <span>→</span>
+
+                    <a href="learn.html#python-lessons">
+                        Python
+                    </a>
+
+                    <span>→</span>
+
+                    <p>Lesson 2</p>
+
+                </nav>
+
+                <div class="lesson-hero-layout">
+
+                    <div class="lesson-hero-copy">
+
+                        <div class="lesson-hero-labels">
+
+                            <span class="lesson-course-label">
+                                Python
+                            </span>
+
+                            <span class="lesson-level-label">
+                                Beginner
+                            </span>
+
+                            <span class="lesson-time-label">
+                                30–40 Minutes
+                            </span>
+
+                        </div>
+
+                        <p class="lesson-number-label">
+                            Lesson 02
+                        </p>
+
+                        <h1>
+                            Ask Questions
+                            <span>&amp; Collect Input</span>
+                        </h1>
+
+                        <p class="lesson-hero-description">
+                            Make your programs interactive by asking the 
+                            user questions, storing their answers, and 
+                            responding with personalized messages.
+                        </p>
+
+                        <div class="lesson-hero-actions">
+
+                            <a
+                                href="#lesson-start"
+                                class="button button-primary lesson-start-button"
+                            >
+                                Start Lesson
+                                <span>↓</span>
+                            </a>
+
+                            <a
+                                href="learn.html"
+                                class="lesson-back-link"
+                            >
+                                ← Return to Lessons
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Hero Code Example -->
+                    <div class="lesson-hero-code">
+
+                        <div class="lesson-code-window">
+
+                            <div class="lesson-code-top">
+
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <p>lesson_2.py</p>
+
+                            </div>
+
+                            <div class="lesson-code-body">
+
+                                <p>
+                                    <span class="code-comment">
+                                        # Ask the user a question
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">
+                                        student_name
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-function">
+                                        input
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"What is your name? "</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Welcome,"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-variable">
+                                        student_name
+                                    </span><span class="code-symbol">)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Your coding journey starts now!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                            <div class="lesson-code-output">
+
+                                <p>
+                                    <span>▶</span>
+                                    Program Conversation
+                                </p>
+
+                                <strong>
+                                    What is your name? Maya
+                                </strong>
+
+                                <strong>
+                                    Welcome, Maya
+                                </strong>
+
+                                <strong>
+                                    Your coding journey starts now!
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Progress Navigation -->
+        <section class="lesson-progress-bar">
+
+            <div class="container lesson-progress-layout">
+
+                <a
+                    href="#lesson-start"
+                    class="progress-item active-progress"
+                >
+                    <span>01</span>
+                    <p>Overview</p>
+                </a>
+
+                <a
+                    href="#presentation"
+                    class="progress-item"
+                >
+                    <span>02</span>
+                    <p>Presentation</p>
+                </a>
+
+                <a
+                    href="#lesson-vocabulary"
+                    class="progress-item"
+                >
+                    <span>03</span>
+                    <p>Vocabulary</p>
+                </a>
+
+                <a
+                    href="#input-function"
+                    class="progress-item"
+                >
+                    <span>04</span>
+                    <p>Input</p>
+                </a>
+
+                <a
+                    href="#storing-answers"
+                    class="progress-item"
+                >
+                    <span>05</span>
+                    <p>Store Answers</p>
+                </a>
+
+                <a
+                    href="#practice"
+                    class="progress-item"
+                >
+                    <span>06</span>
+                    <p>Practice</p>
+                </a>
+
+                <a
+                    href="#mini-challenge"
+                    class="progress-item"
+                >
+                    <span>07</span>
+                    <p>Challenge</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Overview -->
+        <section
+            class="section lesson-overview-section"
+            id="lesson-start"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lesson Overview
+                        </p>
+
+                        <h2>
+                            What will you learn?
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        By the end of this lesson, you will be able
+                        to ask users questions, save their answers,
+                        and use those answers inside your program.
+                    </p>
+
+                </div>
+
+                <div class="lesson-goal-grid">
+
+                    <article class="lesson-goal-card goal-card-red">
+
+                        <div class="lesson-goal-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Ask Questions
+                        </h3>
+
+                        <p>
+                            Use the Python
+                            <code>input()</code>
+                            function to ask the person using your
+                            program for information.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-purple">
+
+                        <div class="lesson-goal-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Store Answers
+                        </h3>
+
+                        <p>
+                            Save the user's response inside a variable
+                            so that your program can remember it.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-blue">
+
+                        <div class="lesson-goal-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Personalize Programs
+                        </h3>
+
+                        <p>
+                            Combine input, variables, and print
+                            statements to create programs that respond
+                            directly to the user.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <aside class="before-you-begin">
+
+                    <div class="before-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p class="before-label">
+                            Before You Begin
+                        </p>
+
+                        <h3>
+                            Complete Python Lesson 1 first.
+                        </h3>
+
+                        <p>
+                            This lesson builds on print statements and
+                            variables. Review Lesson 1 if you need help
+                            remembering how either concept works.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Presentation and Video -->
+        <section
+            class="section lesson-media-section"
+            id="presentation"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Learn the Lesson
+                        </p>
+
+                        <h2>
+                            Watch, review, and follow along.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These areas will hold the original materials
+                        used in the YMCA Code Academy class.
+                    </p>
+
+                </div>
+
+                <div class="lesson-media-grid">
+
+                    <!-- Presentation Area -->
+                    <article class="lesson-media-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon presentation-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Lesson Slides
+                                </p>
+
+                                <h3>
+                                    Class Presentation
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="embedded-presentation">
+
+                            <iframe
+                                src="https://docs.google.com/presentation/d/e/2PACX-1vSQN900PnmGjTox325s8Q2yKyhCp55r7_qgIgAEv8syVdE6Z0_rQjgBsi4ojP0nhCDkOpL8Ztz5b5cd/pubembed?start=false&loop=false&delayms=3000"
+                                frameborder="0"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Python Lesson 2 Presentation"
+                            ></iframe>
+
+                        </div>
+
+                        <p class="media-description">
+                            Follow along with the original YMCA Code Academy Lesson 2 presentation.
+                            Work through the slides at your own pace or open the full presentation in a new tab.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vSQN900PnmGjTox325s8Q2yKyhCp55r7_qgIgAEv8syVdE6Z0_rQjgBsi4ojP0nhCDkOpL8Ztz5b5cd/pub?start=false&loop=false&delayms=3000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Full Presentation
+                        </a>
+
+                    </article>
+
+                    <!-- Independent Learning Guide -->
+                    <article class="lesson-media-card learning-guide-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon guide-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Learning Guide
+                                </p>
+
+                                <h3>
+                                    How to Complete This Lesson
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lesson-guide-steps">
+
+                            <div class="lesson-guide-step">
+
+                                <span>01</span>
+
+                                <div>
+                                    <h4>Review the Lesson</h4>
+
+                                    <p>
+                                        Begin with the overview and learn what makes 
+                                        a program interactive
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>02</span>
+
+                                <div>
+                                    <h4>Learn the Input Functions</h4>
+
+                                    <p>
+                                        Study how input() asks a question and waits 
+                                        for the user to type an answer.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>03</span>
+
+                                <div>
+                                    <h4>Test Different Answers</h4>
+
+                                    <p>
+                                        Run your program several times and enter a 
+                                        different response each time.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>04</span>
+
+                                <div>
+                                    <h4>Build an Interview Program</h4>
+
+                                    <p>
+                                        Ask several questions and use the answers to
+                                        display a personalized message.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="#lesson-vocabulary"
+                            class="button lesson-guide-button"
+                        >
+                            Continue the Lesson
+                            <span>↓</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Vocabulary -->
+        <section
+            class="section vocabulary-section"
+            id="lesson-vocabulary"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Key Vocabulary
+                        </p>
+
+                        <h2>
+                            Words that make programs interactive.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These terms explain how a Python program can ask
+                        questions, collect information, and respond to a user.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Input
+                        </h3>
+
+                        <p>
+                            Information entered into a program by the user.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            02
+                        </div>
+
+                        <h3>
+                            User
+                        </h3>
+
+                        <p>
+                            The person who is currently interacting with
+                            the program.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Input Function
+                        </h3>
+
+                        <p>
+                            The Python
+                            <code>input()</code>
+                            function asks a question and waits for an answer.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Prompt
+                        </h3>
+
+                        <p>
+                            The question or message displayed inside the
+                            input function.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Response
+                        </h3>
+
+                        <p>
+                            The answer that the user types into the program.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Interactive Program
+                        </h3>
+
+                        <p>
+                            A program that responds differently based on
+                            information supplied by the user.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Input Function -->
+        <section
+            class="section concept-section print-concept-section"
+            id="input-function"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 01
+                    </p>
+
+                    <p class="section-label">
+                        The Input Function
+                    </p>
+
+                    <h2>
+                        Ask the user a question.
+                    </h2>
+
+                    <p>
+                        The
+                        <code>input()</code>
+                        function displays a question and pauses the program
+                        until the user types an answer.
+                    </p>
+
+                    <p>
+                        The question inside the parentheses is called the
+                        prompt. It should clearly tell the user what to enter.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Remember</span>
+
+                        <p>
+                            The prompt is text, so it must be placed inside
+                            quotation marks.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 1
+                            </p>
+
+                            <span>
+                                Asking a Question
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <p>
+                                <span class="code-function">
+                                    input
+                                </span><span class="code-symbol">(</span><span
+                                    class="code-string"
+                                >"What is your name? "</span><span
+                                    class="code-symbol"
+                                >)</span>
+                            </p>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Program</p>
+
+                            <strong>
+                                What is your name? Maya
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 2
+                            </p>
+
+                            <span>
+                                Asking About a Hobby
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <p>
+                                <span class="code-function">
+                                    input
+                                </span><span class="code-symbol">(</span><span
+                                    class="code-string"
+                                >"What is your favorite hobby? "</span><span
+                                    class="code-symbol"
+                                >)</span>
+                            </p>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Program</p>
+
+                            <strong>
+                                What is your favorite hobby? Drawing
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Try It Yourself -->
+        <section class="section try-it-section">
+
+            <div class="container">
+
+                <div class="try-it-card">
+
+                    <div class="try-it-heading">
+
+                        <div class="try-it-label">
+                            Try It Yourself
+                        </div>
+
+                        <h2>
+                            Ask the user about their favorite food.
+                        </h2>
+
+                        <p>
+                            Write one line of Python that asks:
+                        </p>
+
+                        <blockquote>
+                            What is your favorite food?
+                        </blockquote>
+
+                    </div>
+
+                    <div class="try-it-editor">
+
+                        <div class="try-editor-top">
+
+                            <p>your_code.py</p>
+
+                            <span>Practice</span>
+
+                        </div>
+
+                        <label
+                            for="input-practice-input"
+                            class="sr-only"
+                        >
+                            Type your input statement
+                        </label>
+
+                        <textarea
+                            id="input-practice-input"
+                            class="practice-code-input"
+                            spellcheck="false"
+                            placeholder="Type your code here..."
+                        ></textarea>
+
+                        <div class="try-it-actions">
+
+                            <button
+                                type="button"
+                                class="check-code-button"
+                                id="check-input-answer"
+                            >
+                                Check My Code
+                            </button>
+
+                            <button
+                                type="button"
+                                class="show-answer-button"
+                                id="show-input-answer"
+                            >
+                                Show Answer
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="practice-feedback"
+                            id="input-feedback"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Storing User Answers -->
+        <section
+            class="section concept-section variable-concept-section"
+            id="storing-answers"
+        >
+
+            <div class="container concept-layout reverse-concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 02
+                    </p>
+
+                    <p class="section-label">
+                        Storing Answers
+                    </p>
+
+                    <h2>
+                        Save the user's response.
+                    </h2>
+
+                    <p>
+                        An input statement becomes much more useful when the
+                        user's answer is stored inside a variable.
+                    </p>
+
+                    <p>
+                        The variable goes before the equals sign, and the
+                        input function goes after it.
+                    </p>
+
+                    <div class="variable-formula">
+
+                        <span>variable_name</span>
+
+                        <strong>=</strong>
+
+                        <span>input("Question")</span>
+
+                    </div>
+
+                    <div class="concept-rule">
+
+                        <span>Important</span>
+
+                        <p>
+                            Without a variable, Python can ask the question,
+                            but your program will not have a name for the
+                            answer that it receives.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="variable-visual-card">
+
+                        <div class="variable-container-name">
+                            favorite_food
+                        </div>
+
+                        <div class="variable-container">
+
+                            <span>
+                                "pizza"
+                            </span>
+
+                        </div>
+
+                        <p>
+                            The user's answer is stored inside the variable
+                            <code>favorite_food</code>.
+                        </p>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 3
+                            </p>
+
+                            <span>
+                                Saving and Using an Answer
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        favorite_food
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-function">
+                                        input
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"What is your favorite food? "</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"You like"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+
+                                    <span class="code-variable">
+                                        favorite_food
+                                    </span><span class="code-symbol">)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Program Conversation</p>
+
+                            <strong>
+                                What is your favorite food? Pizza
+                            </strong>
+
+                            <br>
+
+                            <strong>
+                                You like Pizza
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Common Input Mistakes -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Common Mistakes
+                        </p>
+
+                        <h2>
+                            Check the structure of your input statement.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Small syntax mistakes can prevent Python from asking
+                        the question correctly.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct</p>
+
+                            <code>
+                                name = input("What is your name? ")
+                            </code>
+
+                            <span>
+                                The prompt has quotes and parentheses.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct</p>
+
+                            <code>
+                                print("Hello,", name)
+                            </code>
+
+                            <span>
+                                The stored answer is used through its variable.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Incorrect</p>
+
+                            <code>
+                                name = input(What is your name?)
+                            </code>
+
+                            <span>
+                                The prompt is missing quotation marks.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Incorrect</p>
+
+                            <code>
+                                name input("What is your name?")
+                            </code>
+
+                            <span>
+                                The equals sign is missing.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Practice Questions -->
+        <section
+            class="section practice-section"
+            id="practice"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Check Your Understanding
+                        </p>
+
+                        <h2>
+                            Practice what you learned.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Answer all four questions and then check your score.
+                    </p>
+
+                </div>
+
+                <form
+                    class="practice-quiz"
+                    id="lesson-two-quiz"
+                >
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 1</span>
+
+                            Which Python function asks the user a question?
+
+                        </legend>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-1"
+                                value="a"
+                            >
+                            <span>print()</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-1"
+                                value="b"
+                            >
+                            <span>input()</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-1"
+                                value="c"
+                            >
+                            <span>question()</span>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 2</span>
+
+                            What is the prompt in an input statement?
+
+                        </legend>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-2"
+                                value="a"
+                            >
+                            <span>The question displayed to the user</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-2"
+                                value="b"
+                            >
+                            <span>The name of the Python file</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-2"
+                                value="c"
+                            >
+                            <span>An error message</span>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 3</span>
+
+                            Which line correctly stores a user's answer?
+
+                        </legend>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-3"
+                                value="a"
+                            >
+                            <span>name = input("What is your name? ")</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-3"
+                                value="b"
+                            >
+                            <span>name input("What is your name? ")</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-3"
+                                value="c"
+                            >
+                            <span>input = name("What is your name? ")</span>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 4</span>
+
+                            What will this program ask the user?
+
+                        </legend>
+
+                        <div class="quiz-code">
+
+                            <p>
+                                color = input("What is your favorite color? ")
+                            </p>
+
+                        </div>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-4"
+                                value="a"
+                            >
+                            <span>What is your name?</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-4"
+                                value="b"
+                            >
+                            <span>What is your favorite color?</span>
+                        </label>
+
+                        <label class="quiz-option">
+                            <input
+                                type="radio"
+                                name="lesson-two-question-4"
+                                value="c"
+                            >
+                            <span>What is your favorite number?</span>
+                        </label>
+
+                    </fieldset>
+
+                    <div class="quiz-submit-area">
+
+                        <button
+                            type="submit"
+                            class="button button-primary quiz-submit-button"
+                        >
+                            Check My Answers
+                        </button>
+
+                        <div
+                            class="quiz-result"
+                            id="lesson-two-quiz-result"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Mini Challenge -->
+        <section
+            class="section mini-challenge-section"
+            id="mini-challenge"
+        >
+
+            <div class="container">
+
+                <div class="mini-challenge-card">
+
+                    <div class="challenge-badge">
+                        Final Activity
+                    </div>
+
+                    <div class="mini-challenge-layout">
+
+                        <div class="mini-challenge-copy">
+
+                            <p class="section-label">
+                                Mini Coding Challenge
+                            </p>
+
+                            <h2>
+                                Create a short interview program.
+                            </h2>
+
+                            <p>
+                                Ask the user several questions, save each
+                                answer, and use those answers in a personalized
+                                response.
+                            </p>
+
+                            <div class="challenge-requirements">
+
+                                <p>
+                                    <span>1</span>
+                                    Ask the user for their name.
+                                </p>
+
+                                <p>
+                                    <span>2</span>
+                                    Ask for their favorite hobby.
+                                </p>
+
+                                <p>
+                                    <span>3</span>
+                                    Ask for their favorite school subject.
+                                </p>
+
+                                <p>
+                                    <span>4</span>
+                                    Print a message using all three answers.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="challenge-example">
+
+                            <div class="challenge-example-top">
+
+                                <p>
+                                    Example Structure
+                                </p>
+
+                                <span>
+                                    Use your own questions
+                                </span>
+
+                            </div>
+
+                            <div class="challenge-code">
+
+                                <p>
+                                    <span class="code-variable">name</span>
+                                    <span class="code-symbol">=</span>
+                                    <span class="code-function">input</span><span
+                                        class="code-symbol"
+                                    >(</span><span class="code-string"
+                                    >"What is your name? "</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">hobby</span>
+                                    <span class="code-symbol">=</span>
+                                    <span class="code-function">input</span><span
+                                        class="code-symbol"
+                                    >(</span><span class="code-string"
+                                    >"What is your favorite hobby? "</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-variable">subject</span>
+                                    <span class="code-symbol">=</span>
+                                    <span class="code-function">input</span><span
+                                        class="code-symbol"
+                                    >(</span><span class="code-string"
+                                    >"What is your favorite subject? "</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-function">print</span><span
+                                        class="code-symbol"
+                                    >(</span><span class="code-string"
+                                    >"Hello,"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+                                    <span class="code-variable">name</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">print</span><span
+                                        class="code-symbol"
+                                    >(</span><span class="code-string"
+                                    >"You enjoy"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+                                    <span class="code-variable">hobby</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    <span class="code-function">print</span><span
+                                        class="code-symbol"
+                                    >(</span><span class="code-string"
+                                    >"Your favorite subject is"</span><span
+                                        class="code-symbol"
+                                    >,</span>
+                                    <span class="code-variable">subject</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Complete -->
+        <section class="section lesson-complete-section">
+
+            <div class="container lesson-complete-layout">
+
+                <div class="completion-symbol">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p class="section-label">
+                        Lesson Complete
+                    </p>
+
+                    <h2>
+                        You made your program interactive.
+                    </h2>
+
+                    <p>
+                        You now know how to ask questions, collect user 
+                        input, store answers, and create personalized 
+                        responses.
+                    </p>
+
+                </div>
+
+                <div class="completion-actions">
+
+                    <button
+                        type="button"
+                        class="button button-primary"
+                        id="complete-lesson-button"
+                    >
+                        Mark Lesson Complete
+                    </button>
+
+                    <a
+                        href="learn.html"
+                        class="button completion-secondary-button"
+                    >
+                        Return to Lesson Library
+                    </a>
+
+                    <p
+                        class="completion-message"
+                        id="completion-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <p class="footer-logo">
+                    YMCA Code Academy
+                </p>
+
+                <p>
+                    A volunteer-led youth coding program based at the
+                    Paterson YMCA.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Website created by a high school volunteer who
+                    founded and teaches YMCA Code Academy.
+                </p>
+
+                <p class="footer-note">
+                    This website is not operated by the YMCA of the USA.
+                </p>
+
+                <p>
+                    © <span id="current-year"></span>
+                    YMCA Code Academy
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

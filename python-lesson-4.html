@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Learn how to repeat actions with for loops, while loops, and range in Python with YMCA Code Academy."
+    >
+
+    <title>
+        Python Lesson 4: Loops and Repeating Code
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lesson-page">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                YMCA <span>Code Academy</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="learn.html" class="active-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li>
+                    <a href="challenge.html">
+                        Code Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Student Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Lesson Hero -->
+        <section class="lesson-hero">
+
+            <div class="lesson-hero-grid"></div>
+
+            <div class="lesson-hero-glow lesson-glow-one"></div>
+            <div class="lesson-hero-glow lesson-glow-two"></div>
+
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <nav
+                    class="lesson-breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="learn.html">
+                        Learn
+                    </a>
+
+                    <span>→</span>
+
+                    <a href="learn.html#python-lessons">
+                        Python
+                    </a>
+
+                    <span>→</span>
+
+                    <p>Lesson 4</p>
+
+                </nav>
+
+                <div class="lesson-hero-layout">
+
+                    <div class="lesson-hero-copy">
+
+                        <div class="lesson-hero-labels">
+
+                            <span class="lesson-course-label">
+                                Python
+                            </span>
+
+                            <span class="lesson-level-label">
+                                Beginner
+                            </span>
+
+                            <span class="lesson-time-label">
+                                35–45 Minutes
+                            </span>
+
+                        </div>
+
+                        <p class="lesson-number-label">
+                            Lesson 04
+                        </p>
+
+                        <h1>
+                            Repeat Actions
+                            <span>With Loops</span>
+                        </h1>
+
+                        <p class="lesson-hero-description">
+                            Make your programs more efficient by using
+                            for loops and while loops to repeat actions
+                            without rewriting the same code.
+                        </p>
+
+                        <div class="lesson-hero-actions">
+
+                            <a
+                                href="#lesson-start"
+                                class="button button-primary lesson-start-button"
+                            >
+                                Start Lesson
+                                <span>↓</span>
+                            </a>
+
+                            <a
+                                href="learn.html"
+                                class="lesson-back-link"
+                            >
+                                ← Return to Lessons
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Hero Code Example -->
+                    <div class="lesson-hero-code">
+
+                        <div class="lesson-code-window">
+
+                            <div class="lesson-code-top">
+
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <p>lesson_4.py</p>
+
+                            </div>
+
+                            <div class="lesson-code-body">
+
+                                <p>
+                                    <span class="code-comment">
+                                        # Repeat a message five times
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        for
+                                    </span>
+
+                                    <span class="code-variable">
+                                        number
+                                    </span>
+
+                                    <span class="code-purple">
+                                        in
+                                    </span>
+
+                                    <span class="code-function">
+                                        range
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-number"
+                                    >5</span><span
+                                        class="code-symbol"
+                                    >):</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Keep coding!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Loop complete!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                            <div class="lesson-code-output">
+
+                                <p>
+                                    <span>▶</span>
+                                    Output
+                                </p>
+
+                                <strong>Keep coding!</strong>
+                                <strong>Keep coding!</strong>
+                                <strong>Keep coding!</strong>
+                                <strong>Keep coding!</strong>
+                                <strong>Keep coding!</strong>
+                                <strong>Loop complete!</strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Progress Navigation -->
+        <section class="lesson-progress-bar">
+
+            <div class="container lesson-progress-layout">
+
+                <a
+                    href="#lesson-start"
+                    class="progress-item active-progress"
+                >
+                    <span>01</span>
+                    <p>Overview</p>
+                </a>
+
+                <a
+                    href="#presentation"
+                    class="progress-item"
+                >
+                    <span>02</span>
+                    <p>Presentation</p>
+                </a>
+
+                <a
+                    href="#lesson-vocabulary"
+                    class="progress-item"
+                >
+                    <span>03</span>
+                    <p>Vocabulary</p>
+                </a>
+
+                <a
+                    href="#for-loops"
+                    class="progress-item"
+                >
+                    <span>04</span>
+                    <p>For Loops</p>
+                </a>
+
+                <a
+                    href="#while-loops"
+                    class="progress-item"
+                >
+                    <span>05</span>
+                    <p>While Loops</p>
+                </a>
+
+                <a
+                    href="#practice"
+                    class="progress-item"
+                >
+                    <span>06</span>
+                    <p>Practice</p>
+                </a>
+
+                <a
+                    href="#mini-challenge"
+                    class="progress-item"
+                >
+                    <span>07</span>
+                    <p>Challenge</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Overview -->
+        <section
+            class="section lesson-overview-section"
+            id="lesson-start"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Lesson Overview
+                        </p>
+
+                        <h2>
+                            What will you learn?
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        By the end of this lesson, you will be able to
+                        repeat code a specific number of times and keep
+                        code running while a condition remains true.
+                    </p>
+
+                </div>
+
+                <div class="lesson-goal-grid">
+
+                    <article class="lesson-goal-card goal-card-red">
+
+                        <div class="lesson-goal-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Repeat Efficiently
+                        </h3>
+
+                        <p>
+                            Replace repeated lines of code with a loop
+                            that performs the action automatically.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-purple">
+
+                        <div class="lesson-goal-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Use For Loops
+                        </h3>
+
+                        <p>
+                            Use <code>for</code> and
+                            <code>range()</code> when you know how many
+                            times an action should repeat.
+                        </p>
+
+                    </article>
+
+                    <article class="lesson-goal-card goal-card-blue">
+
+                        <div class="lesson-goal-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Use While Loops
+                        </h3>
+
+                        <p>
+                            Use a <code>while</code> loop to repeat code
+                            as long as a condition remains true.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <aside class="before-you-begin">
+
+                    <div class="before-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p class="before-label">
+                            Before You Begin
+                        </p>
+
+                        <h3>
+                            Complete Python Lessons 1 through 3 first.
+                        </h3>
+
+                        <p>
+                            Loops use variables, print statements,
+                            comparisons, and conditionals. Review those
+                            lessons if you need extra practice.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Presentation and Learning Guide -->
+        <section
+            class="section lesson-media-section"
+            id="presentation"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Learn the Lesson
+                        </p>
+
+                        <h2>
+                            Review the slides and follow along.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Study the original class presentation before
+                        completing the examples and practice activities.
+                    </p>
+
+                </div>
+
+                <div class="lesson-media-grid">
+
+                    <!-- Presentation -->
+                    <article class="lesson-media-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon presentation-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Lesson Slides
+                                </p>
+
+                                <h3>
+                                    Class Presentation
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="embedded-presentation">
+
+                            <iframe
+                                src="https://docs.google.com/presentation/d/e/2PACX-1vS1BV5SyfgJ5BJCQfw1q1Z3Y823oD83TNiexU5MCNUxVugtP44a7Egk59Rx8BMWM80qCoUcGjFQaZcW/pubembed?start=false&loop=false&delayms=3000"
+                                frameborder="0"
+                                allowfullscreen
+                                loading="lazy"
+                                title="Python Lesson 4 Presentation"
+                            ></iframe>
+
+                        </div>
+
+                        <p class="media-description">
+                            Follow along with the original YMCA Code
+                            Academy Lesson 4 presentation and review
+                            each loop example at your own pace.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="https://docs.google.com/presentation/d/e/2PACX-1vS1BV5SyfgJ5BJCQfw1q1Z3Y823oD83TNiexU5MCNUxVugtP44a7Egk59Rx8BMWM80qCoUcGjFQaZcW/pub?start=false&loop=false&delayms=3000"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Full Presentation
+                        </a>
+
+                    </article>
+
+                    <!-- Independent Learning Guide -->
+                    <article class="lesson-media-card learning-guide-card">
+
+                        <div class="media-card-top">
+
+                            <div class="media-icon guide-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <p class="media-card-label">
+                                    Learning Guide
+                                </p>
+
+                                <h3>
+                                    How to Complete This Lesson
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lesson-guide-steps">
+
+                            <div class="lesson-guide-step">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h4>
+                                        Find the Repeated Action
+                                    </h4>
+
+                                    <p>
+                                        Identify which line or group of
+                                        lines should run more than once.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h4>
+                                        Choose the Loop
+                                    </h4>
+
+                                    <p>
+                                        Use a for loop for a set number
+                                        of repetitions or a while loop
+                                        for a condition.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h4>
+                                        Check the Indentation
+                                    </h4>
+
+                                    <p>
+                                        Indent every line that should
+                                        repeat inside the loop.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lesson-guide-step">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h4>
+                                        Test the Ending
+                                    </h4>
+
+                                    <p>
+                                        Make sure the loop stops when it
+                                        is supposed to stop.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="#lesson-vocabulary"
+                            class="button lesson-guide-button"
+                        >
+                            Continue the Lesson
+                            <span>↓</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Vocabulary -->
+        <section
+            class="section vocabulary-section"
+            id="lesson-vocabulary"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Key Vocabulary
+                        </p>
+
+                        <h2>
+                            Words that explain repeated code.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        These terms describe how loops repeat actions,
+                        count repetitions, and decide when to stop.
+                    </p>
+
+                </div>
+
+                <div class="vocabulary-grid">
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Loop
+                        </h3>
+
+                        <p>
+                            A section of code that repeats an action or
+                            group of actions.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Iteration
+                        </h3>
+
+                        <p>
+                            One complete repetition of a loop.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            03
+                        </div>
+
+                        <h3>
+                            For Loop
+                        </h3>
+
+                        <p>
+                            A loop often used when the number of
+                            repetitions is already known.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            04
+                        </div>
+
+                        <h3>
+                            While Loop
+                        </h3>
+
+                        <p>
+                            A loop that repeats while a condition
+                            remains true.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Range
+                        </h3>
+
+                        <p>
+                            The Python <code>range()</code> function
+                            produces a sequence of numbers for a loop.
+                        </p>
+
+                    </article>
+
+                    <article class="vocabulary-card">
+
+                        <div class="vocabulary-number">
+                            06
+                        </div>
+
+                        <h3>
+                            Infinite Loop
+                        </h3>
+
+                        <p>
+                            A loop that never stops because its
+                            condition never becomes false.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- For Loops -->
+        <section
+            class="section concept-section print-concept-section"
+            id="for-loops"
+        >
+
+            <div class="container concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 01
+                    </p>
+
+                    <p class="section-label">
+                        For Loops
+                    </p>
+
+                    <h2>
+                        Repeat code a specific number of times.
+                    </h2>
+
+                    <p>
+                        A <code>for</code> loop is useful when you know
+                        how many times an action should repeat.
+                    </p>
+
+                    <p>
+                        The <code>range()</code> function tells Python
+                        how many iterations to complete.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Structure</span>
+
+                        <p>
+                            Write <code>for</code>, create a loop
+                            variable, use <code>in range()</code>, add a
+                            colon, and indent the repeated code.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 1
+                            </p>
+
+                            <span>
+                                Repeating a Message
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        for
+                                    </span>
+
+                                    <span class="code-variable">
+                                        number
+                                    </span>
+
+                                    <span class="code-purple">
+                                        in
+                                    </span>
+
+                                    <span class="code-function">
+                                        range
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-number"
+                                    >3</span><span
+                                        class="code-symbol"
+                                    >):</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Python is powerful!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>Python is powerful!</strong>
+                            <br>
+                            <strong>Python is powerful!</strong>
+                            <br>
+                            <strong>Python is powerful!</strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 2
+                            </p>
+
+                            <span>
+                                Displaying Loop Numbers
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-purple">
+                                        for
+                                    </span>
+
+                                    <span class="code-variable">
+                                        number
+                                    </span>
+
+                                    <span class="code-purple">
+                                        in
+                                    </span>
+
+                                    <span class="code-function">
+                                        range
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-number"
+                                    >5</span><span
+                                        class="code-symbol"
+                                    >):</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-variable"
+                                    >number</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>
+                                0 &nbsp; 1 &nbsp; 2 &nbsp; 3 &nbsp; 4
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Try It Yourself -->
+        <section class="section try-it-section">
+
+            <div class="container">
+
+                <div class="try-it-card">
+
+                    <div class="try-it-heading">
+
+                        <div class="try-it-label">
+                            Try It Yourself
+                        </div>
+
+                        <h2>
+                            Repeat a message four times.
+                        </h2>
+
+                        <p>
+                            Write a for loop that repeats the following
+                            message four times:
+                        </p>
+
+                        <blockquote>
+                            I can use loops!
+                        </blockquote>
+
+                    </div>
+
+                    <div class="try-it-editor">
+
+                        <div class="try-editor-top">
+
+                            <p>your_code.py</p>
+
+                            <span>Practice</span>
+
+                        </div>
+
+                        <label
+                            for="loop-practice-input"
+                            class="sr-only"
+                        >
+                            Type your for loop
+                        </label>
+
+                        <textarea
+                            id="loop-practice-input"
+                            class="practice-code-input"
+                            spellcheck="false"
+                            placeholder="Type your code here..."
+                        ></textarea>
+
+                        <div class="try-it-actions">
+
+                            <button
+                                type="button"
+                                class="check-code-button"
+                                id="check-loop-answer"
+                            >
+                                Check My Code
+                            </button>
+
+                            <button
+                                type="button"
+                                class="show-answer-button"
+                                id="show-loop-answer"
+                            >
+                                Show Answer
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="practice-feedback"
+                            id="loop-feedback"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Understanding Range -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Understanding Range
+                        </p>
+
+                        <h2>
+                            Control where the counting starts and stops.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        The range function can use one, two, or three
+                        numbers to control a loop.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            1
+                        </div>
+
+                        <div>
+
+                            <p>One Number</p>
+
+                            <code>
+                                range(5)
+                            </code>
+
+                            <span>
+                                Produces 0, 1, 2, 3, and 4.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            2
+                        </div>
+
+                        <div>
+
+                            <p>Start and Stop</p>
+
+                            <code>
+                                range(1, 6)
+                            </code>
+
+                            <span>
+                                Produces 1, 2, 3, 4, and 5.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            3
+                        </div>
+
+                        <div>
+
+                            <p>Start, Stop, and Step</p>
+
+                            <code>
+                                range(0, 10, 2)
+                            </code>
+
+                            <span>
+                                Produces 0, 2, 4, 6, and 8.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            !
+                        </div>
+
+                        <div>
+
+                            <p>Important</p>
+
+                            <code>
+                                range(5)
+                            </code>
+
+                            <span>
+                                The ending number is not included.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- While Loops -->
+        <section
+            class="section concept-section variable-concept-section"
+            id="while-loops"
+        >
+
+            <div class="container concept-layout reverse-concept-layout">
+
+                <div class="concept-explanation">
+
+                    <p class="concept-number">
+                        Concept 02
+                    </p>
+
+                    <p class="section-label">
+                        While Loops
+                    </p>
+
+                    <h2>
+                        Repeat code while a condition is true.
+                    </h2>
+
+                    <p>
+                        A <code>while</code> loop checks a condition
+                        before each repetition.
+                    </p>
+
+                    <p>
+                        The loop continues while the condition is true
+                        and stops when the condition becomes false.
+                    </p>
+
+                    <div class="concept-rule">
+
+                        <span>Important</span>
+
+                        <p>
+                            Change the variable inside the loop so the
+                            condition can eventually become false.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="concept-code-area">
+
+                    <div class="example-code-card">
+
+                        <div class="example-code-heading">
+
+                            <p>
+                                Example 3
+                            </p>
+
+                            <span>
+                                Counting Up
+                            </span>
+
+                        </div>
+
+                        <div class="example-code">
+
+                            <div>
+
+                                <p>
+                                    <span class="code-variable">
+                                        count
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-number">
+                                        1
+                                    </span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        while
+                                    </span>
+
+                                    <span class="code-variable">
+                                        count
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &lt;=
+                                    </span>
+
+                                    <span class="code-number">
+                                        3
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-variable"
+                                    >count</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-variable"
+                                    >count</span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-variable">
+                                        count
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        +
+                                    </span>
+
+                                    <span class="code-number">
+                                        1
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="example-output">
+
+                            <p>Output</p>
+
+                            <strong>
+                                1 &nbsp; 2 &nbsp; 3
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="variable-visual-card">
+
+                        <div class="variable-container-name">
+                            Loop Condition
+                        </div>
+
+                        <div class="variable-container">
+
+                            <span>
+                                count &lt;= 3
+                            </span>
+
+                        </div>
+
+                        <p>
+                            After each repetition, <code>count</code>
+                            increases. The loop stops when
+                            <code>count</code> becomes 4.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Loop Mistakes -->
+        <section class="section naming-rules-section">
+
+            <div class="container">
+
+                <div class="lesson-section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Common Loop Mistakes
+                        </p>
+
+                        <h2>
+                            Check the structure before running the code.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Most loop errors come from missing colons,
+                        incorrect indentation, or conditions that never
+                        become false.
+                    </p>
+
+                </div>
+
+                <div class="naming-rules-grid">
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct</p>
+
+                            <code>
+                                for number in range(5):
+                            </code>
+
+                            <span>
+                                The loop ends with a colon.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule good-rule">
+
+                        <div class="rule-status">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <p>Correct</p>
+
+                            <code>
+                                &nbsp;&nbsp;&nbsp;&nbsp;print(number)
+                            </code>
+
+                            <span>
+                                The repeated line is indented.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <p>Incorrect</p>
+
+                            <code>
+                                for number range(5):
+                            </code>
+
+                            <span>
+                                The keyword in is missing.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="naming-rule bad-rule">
+
+                        <div class="rule-status">
+                            ∞
+                        </div>
+
+                        <div>
+
+                            <p>Infinite Loop</p>
+
+                            <code>
+                                while count &lt; 5:
+                            </code>
+
+                            <span>
+                                The value of count never changes.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Practice Quiz -->
+        <section
+            class="section practice-section"
+            id="practice"
+        >
+
+            <div class="container">
+
+                <div class="lesson-section-heading light-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            Check Your Understanding
+                        </p>
+
+                        <h2>
+                            Practice what you learned.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Answer all four questions and then check your score.
+                    </p>
+
+                </div>
+
+                <form
+                    class="practice-quiz"
+                    id="lesson-four-quiz"
+                >
+
+                    <!-- Question 1 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 1</span>
+
+                            What is the main purpose of a loop?
+
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-1"
+                                value="a"
+                            >
+
+                            <span>
+                                To repeat code.
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-1"
+                                value="b"
+                            >
+
+                            <span>
+                                To delete every variable.
+                            </span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-1"
+                                value="c"
+                            >
+
+                            <span>
+                                To close the program immediately.
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 2 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 2</span>
+
+                            How many times will this loop repeat?
+
+                        </legend>
+
+                        <div class="quiz-code">
+
+                            <p>
+                                for number in range(4):
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;print("Hello")
+                            </p>
+
+                        </div>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-2"
+                                value="a"
+                            >
+
+                            <span>3 times</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-2"
+                                value="b"
+                            >
+
+                            <span>4 times</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-2"
+                                value="c"
+                            >
+
+                            <span>5 times</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 3 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 3</span>
+
+                            Which loop repeats while a condition is true?
+
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-3"
+                                value="a"
+                            >
+
+                            <span>A print loop</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-3"
+                                value="b"
+                            >
+
+                            <span>A while loop</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-3"
+                                value="c"
+                            >
+
+                            <span>An input loop</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 4 -->
+                    <fieldset class="quiz-question">
+
+                        <legend>
+
+                            <span>Question 4</span>
+
+                            What numbers are produced by
+                            <code>range(3)</code>?
+
+                        </legend>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-4"
+                                value="a"
+                            >
+
+                            <span>0, 1, 2</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-4"
+                                value="b"
+                            >
+
+                            <span>1, 2, 3</span>
+
+                        </label>
+
+                        <label class="quiz-option">
+
+                            <input
+                                type="radio"
+                                name="lesson-four-question-4"
+                                value="c"
+                            >
+
+                            <span>0, 1, 2, 3</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <div class="quiz-submit-area">
+
+                        <button
+                            type="submit"
+                            class="button button-primary quiz-submit-button"
+                        >
+                            Check My Answers
+                        </button>
+
+                        <div
+                            class="quiz-result"
+                            id="lesson-four-quiz-result"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Mini Challenge -->
+        <section
+            class="section mini-challenge-section"
+            id="mini-challenge"
+        >
+
+            <div class="container">
+
+                <div class="mini-challenge-card">
+
+                    <div class="challenge-badge">
+                        Final Activity
+                    </div>
+
+                    <div class="mini-challenge-layout">
+
+                        <div class="mini-challenge-copy">
+
+                            <p class="section-label">
+                                Mini Coding Challenge
+                            </p>
+
+                            <h2>
+                                Create a launch countdown.
+                            </h2>
+
+                            <p>
+                                Use a while loop to count down from five
+                                and then display a launch message.
+                            </p>
+
+                            <div class="challenge-requirements">
+
+                                <p>
+                                    <span>1</span>
+                                    Create a variable named countdown.
+                                </p>
+
+                                <p>
+                                    <span>2</span>
+                                    Start the countdown at 5.
+                                </p>
+
+                                <p>
+                                    <span>3</span>
+                                    Use a while loop to display each number.
+                                </p>
+
+                                <p>
+                                    <span>4</span>
+                                    Subtract 1 during each repetition.
+                                </p>
+
+                                <p>
+                                    <span>5</span>
+                                    Print a launch message after the loop.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="challenge-example">
+
+                            <div class="challenge-example-top">
+
+                                <p>
+                                    Example Structure
+                                </p>
+
+                                <span>
+                                    Customize the final message
+                                </span>
+
+                            </div>
+
+                            <div class="challenge-code">
+
+                                <p>
+                                    <span class="code-variable">
+                                        countdown
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-number">
+                                        5
+                                    </span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-purple">
+                                        while
+                                    </span>
+
+                                    <span class="code-variable">
+                                        countdown
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        &gt;
+                                    </span>
+
+                                    <span class="code-number">
+                                        0
+                                    </span><span class="code-symbol">:</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-function"
+                                    >print</span><span class="code-symbol">(</span><span
+                                        class="code-variable"
+                                    >countdown</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-variable"
+                                    >countdown</span>
+
+                                    <span class="code-symbol">
+                                        =
+                                    </span>
+
+                                    <span class="code-variable">
+                                        countdown
+                                    </span>
+
+                                    <span class="code-symbol">
+                                        -
+                                    </span>
+
+                                    <span class="code-number">
+                                        1
+                                    </span>
+                                </p>
+
+                                <p class="lesson-code-space"></p>
+
+                                <p>
+                                    <span class="code-function">
+                                        print
+                                    </span><span class="code-symbol">(</span><span
+                                        class="code-string"
+                                    >"Launch!"</span><span
+                                        class="code-symbol"
+                                    >)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson Completion -->
+        <section class="section lesson-complete-section">
+
+            <div class="container lesson-complete-layout">
+
+                <div class="completion-symbol">
+                    ✓
+                </div>
+
+                <div>
+
+                    <p class="section-label">
+                        Lesson Complete
+                    </p>
+
+                    <h2>
+                        You can now make code repeat efficiently.
+                    </h2>
+
+                    <p>
+                        You learned how to use for loops, range, while
+                        loops, loop variables, and conditions that stop
+                        repeated code.
+                    </p>
+
+                </div>
+
+                <div class="completion-actions">
+
+                    <button
+                        type="button"
+                        class="button button-primary"
+                        id="complete-lesson-button"
+                    >
+                        Mark Lesson Complete
+                    </button>
+
+                    <a
+                        href="learn.html"
+                        class="button completion-secondary-button"
+                    >
+                        Return to Lesson Library
+                    </a>
+
+                    <p
+                        class="completion-message"
+                        id="completion-message"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <p class="footer-logo">
+                    YMCA Code Academy
+                </p>
+
+                <p>
+                    A volunteer-led youth coding program based at the
+                    Paterson YMCA.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Website created by a high school volunteer who
+                    founded and teaches YMCA Code Academy.
+                </p>
+
+                <p class="footer-note">
+                    This website is not operated by the YMCA of the USA.
+                </p>
+
+                <p>
+                    © <span id="current-year"></span>
+                    YMCA Code Academy
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
