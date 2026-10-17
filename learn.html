@@ -25,7 +25,15 @@
         <nav class="navbar container">
 
             <a href="index.html" class="logo">
-                YMCA <span>Code Academy</span>
+                <img
+                    src="images/ymca-logo.png"
+                    alt="YMCA"
+                    class="ymca-header-logo"
+                >
+
+                <span class="logo-wordmark">
+                    YMCA <span>Code Academy</span>
+                </span>
             </a>
 
             <button
@@ -106,7 +114,7 @@
                         </a>
 
                         <a
-                            href="#learning-path"
+                            href="#choose-learning-path"
                             class="button learn-ghost-button"
                         >
                             See Your Learning Path
@@ -229,109 +237,202 @@
 
         </section>
 
-        <!-- Coding Tracks -->
-        <section class="track-section section">
+        <section 
+            class="section learning-path-section"
+            id="choose-learning-path"
+        >
 
             <div class="container">
 
-                <div class="learn-section-heading centered-heading">
+                <div class="section-heading centered-heading learning-path-heading">
 
                     <p class="section-label">
-                        Choose Your Track
+                        Choose Your Learning Path
                     </p>
 
                     <h2>
-                        There is more than one way to start.
+                        Scratch or Python?
                     </h2>
 
                     <p>
-                        Both paths are designed for beginners. Pick the
-                        one that feels right, or try both.
+                        Both learning paths teach important programming
+                        concepts, but they use different approaches. Choose
+                        the path that matches your experience, or complete
+                        both.
                     </p>
 
                 </div>
 
-                <div class="track-showcase-grid">
+                <div class="learning-path-grid">
 
-                    <!-- Scratch Track -->
-                    <article class="track-showcase-card scratch-showcase">
+                    <!-- Scratch Path -->
+                    <article class="learning-path-card scratch-path">
 
-                        <div class="track-orbit orbit-one"></div>
-                        <div class="track-orbit orbit-two"></div>
+                        <div class="path-card-top">
 
-                        <div class="track-card-content">
-
-                            <div class="track-icon scratch-icon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                            <div class="path-icon scratch-path-icon">
+                                S
                             </div>
 
-                            <p class="track-small-label">
+                            <span class="path-badge">
                                 Visual Coding
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Scratch
+                        </h3>
+
+                        <p class="path-subtitle">
+                            A strong starting point for first-time coders.
+                        </p>
+
+                        <ul class="path-list">
+
+                            <li>
+                                <span>✓</span>
+                                Connect colorful programming blocks
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Create games, stories, and animations
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Learn events, loops, variables, and logic
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Focus on creativity without typing syntax
+                            </li>
+
+                        </ul>
+
+                        <div class="coding-platform-box">
+
+                            <p class="platform-label">
+                                Where will you code?
                             </p>
 
-                            <h3>Scratch</h3>
+                            <h4>
+                                Scratch Project Editor
+                            </h4>
 
                             <p>
-                                Connect colorful blocks to create
-                                animations, stories, and games without
-                                worrying about typing code perfectly.
+                                Build the lesson activities and final projects
+                                directly in Scratch's official online editor.
                             </p>
 
-                            <div class="track-tags">
-                                <span>Best first step</span>
-                                <span>Grades 1–6</span>
-                                <span>Creative projects</span>
-                            </div>
+                        </div>
+
+                        <div class="path-actions">
 
                             <a
                                 href="#scratch-lessons"
-                                class="track-button"
+                                class="button button-primary"
                             >
-                                Explore Scratch
-                                <span>→</span>
+                                View Scratch Lessons
+                            </a>
+
+                            <a
+                                href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted"
+                                class="button platform-launch-button scratch-launch-button"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Launch Scratch Editor
+                                <span aria-hidden="true">↗</span>
                             </a>
 
                         </div>
 
                     </article>
 
-                    <!-- Python Track -->
-                    <article class="track-showcase-card python-showcase">
+                    <!-- Python Path -->
+                    <article class="learning-path-card python-path">
 
-                        <div class="python-grid-decoration"></div>
+                        <div class="path-card-top">
 
-                        <div class="track-card-content">
-
-                            <div class="track-icon python-icon">
+                            <div class="path-icon python-path-icon">
                                 &gt;_
                             </div>
 
-                            <p class="track-small-label">
+                            <span class="path-badge">
                                 Text-Based Coding
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Python
+                        </h3>
+
+                        <p class="path-subtitle">
+                            A beginner-friendly path into typed programming.
+                        </p>
+
+                        <ul class="path-list">
+
+                            <li>
+                                <span>✓</span>
+                                Write and run real Python programs
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Learn programming syntax and structure
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Build quizzes, stories, and interactive programs
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Prepare for more advanced computer science
+                            </li>
+
+                        </ul>
+
+                        <div class="coding-platform-box">
+
+                            <p class="platform-label">
+                                Where will you code?
                             </p>
 
-                            <h3>Python</h3>
+                            <h4>
+                                Replit Python Editor
+                            </h4>
 
                             <p>
-                                Write real code to create messages,
-                                choices, quizzes, games, and programs
-                                that grow with every lesson.
+                                Write and run Python in a web browser without
+                                installing programming software on your device.
                             </p>
 
-                            <div class="track-tags">
-                                <span>Beginner friendly</span>
-                                <span>Grades 5–9</span>
-                                <span>Real programming</span>
-                            </div>
+                        </div>
+
+                        <div class="path-actions">
 
                             <a
                                 href="#python-lessons"
-                                class="track-button"
+                                class="button button-primary"
                             >
-                                Explore Python
-                                <span>→</span>
+                                View Python Lessons
+                            </a>
+
+                            <a
+                                href="https://replit.com/languages/python3"
+                                class="button platform-launch-button python-launch-button"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Launch Python Editor
+                                <span aria-hidden="true">↗</span>
                             </a>
 
                         </div>
@@ -339,6 +440,61 @@
                     </article>
 
                 </div>
+
+                <aside class="learning-path-note">
+
+                    <div class="learning-path-note-icon">
+                        ?
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Not sure which one to choose?
+                        </h3>
+
+                        <p>
+                            Begin with <strong>Scratch</strong> if this is your
+                            first coding experience or you would rather build
+                            programs with visual blocks. Choose
+                            <strong>Python</strong> if you are comfortable
+                            typing and are ready to write commands. You can
+                            return and complete the other path later.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+                <aside class="platform-help-note">
+
+                    <div class="platform-help-icon">
+                        ↗
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            The lessons and coding editors work together.
+                        </h3>
+
+                        <p>
+                            Keep the YMCA Code Academy lesson open in one
+                            browser tab and the Scratch or Python editor open
+                            in another. Read each explanation on this website,
+                            then build and test the code inside the editor.
+                        </p>
+
+                        <p class="platform-account-note">
+                            Scratch and Replit may ask students to create a
+                            free account to save projects. Students should
+                            follow their parent, guardian, teacher, or program
+                            instructor's rules for creating online accounts.
+                        </p>
+
+                    </div>
+
+                </aside>
 
             </div>
 
@@ -1049,266 +1205,6 @@
 
         </section>
 
-        <section class="section learning-path-section">
-
-            <div class="container">
-
-                <div class="section-heading centered-heading learning-path-heading">
-
-                    <p class="section-label">
-                        Choose Your Learning Path
-                    </p>
-
-                    <h2>
-                        Scratch or Python?
-                    </h2>
-
-                    <p>
-                        Both learning paths teach important programming
-                        concepts, but they use different approaches. Choose
-                        the path that matches your experience, or complete
-                        both.
-                    </p>
-
-                </div>
-
-                <div class="learning-path-grid">
-
-                    <!-- Scratch Path -->
-                    <article class="learning-path-card scratch-path">
-
-                        <div class="path-card-top">
-
-                            <div class="path-icon scratch-path-icon">
-                                S
-                            </div>
-
-                            <span class="path-badge">
-                                Visual Coding
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Scratch
-                        </h3>
-
-                        <p class="path-subtitle">
-                            A strong starting point for first-time coders.
-                        </p>
-
-                        <ul class="path-list">
-
-                            <li>
-                                <span>✓</span>
-                                Connect colorful programming blocks
-                            </li>
-
-                            <li>
-                                <span>✓</span>
-                                Create games, stories, and animations
-                            </li>
-
-                            <li>
-                                <span>✓</span>
-                                Learn events, loops, variables, and logic
-                            </li>
-
-                            <li>
-                                <span>✓</span>
-                                Focus on creativity without typing syntax
-                            </li>
-
-                        </ul>
-
-                        <div class="coding-platform-box">
-
-                            <p class="platform-label">
-                                Where will you code?
-                            </p>
-
-                            <h4>
-                                Scratch Project Editor
-                            </h4>
-
-                            <p>
-                                Build the lesson activities and final projects
-                                directly in Scratch's official online editor.
-                            </p>
-
-                        </div>
-
-                        <div class="path-actions">
-
-                            <a
-                                href="#scratch-lessons"
-                                class="button button-primary"
-                            >
-                                View Scratch Lessons
-                            </a>
-
-                            <a
-                                href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted"
-                                class="button platform-launch-button scratch-launch-button"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Launch Scratch Editor
-                                <span aria-hidden="true">↗</span>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- Python Path -->
-                    <article class="learning-path-card python-path">
-
-                        <div class="path-card-top">
-
-                            <div class="path-icon python-path-icon">
-                                &gt;_
-                            </div>
-
-                            <span class="path-badge">
-                                Text-Based Coding
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Python
-                        </h3>
-
-                        <p class="path-subtitle">
-                            A beginner-friendly path into typed programming.
-                        </p>
-
-                        <ul class="path-list">
-
-                            <li>
-                                <span>✓</span>
-                                Write and run real Python programs
-                            </li>
-
-                            <li>
-                                <span>✓</span>
-                                Learn programming syntax and structure
-                            </li>
-
-                            <li>
-                                <span>✓</span>
-                                Build quizzes, stories, and interactive programs
-                            </li>
-
-                            <li>
-                                <span>✓</span>
-                                Prepare for more advanced computer science
-                            </li>
-
-                        </ul>
-
-                        <div class="coding-platform-box">
-
-                            <p class="platform-label">
-                                Where will you code?
-                            </p>
-
-                            <h4>
-                                Replit Python Editor
-                            </h4>
-
-                            <p>
-                                Write and run Python in a web browser without
-                                installing programming software on your device.
-                            </p>
-
-                        </div>
-
-                        <div class="path-actions">
-
-                            <a
-                                href="#python-lessons"
-                                class="button button-primary"
-                            >
-                                View Python Lessons
-                            </a>
-
-                            <a
-                                href="https://replit.com/languages/python3"
-                                class="button platform-launch-button python-launch-button"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Launch Python Editor
-                                <span aria-hidden="true">↗</span>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-                <aside class="learning-path-note">
-
-                    <div class="learning-path-note-icon">
-                        ?
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            Not sure which one to choose?
-                        </h3>
-
-                        <p>
-                            Begin with <strong>Scratch</strong> if this is your
-                            first coding experience or you would rather build
-                            programs with visual blocks. Choose
-                            <strong>Python</strong> if you are comfortable
-                            typing and are ready to write commands. You can
-                            return and complete the other path later.
-                        </p>
-
-                    </div>
-
-                </aside>
-
-                <aside class="platform-help-note">
-
-                    <div class="platform-help-icon">
-                        ↗
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            The lessons and coding editors work together.
-                        </h3>
-
-                        <p>
-                            Keep the YMCA Code Academy lesson open in one
-                            browser tab and the Scratch or Python editor open
-                            in another. Read each explanation on this website,
-                            then build and test the code inside the editor.
-                        </p>
-
-                        <p class="platform-account-note">
-                            Scratch and Replit may ask students to create a
-                            free account to save projects. Students should
-                            follow their parent, guardian, teacher, or program
-                            instructor's rules for creating online accounts.
-                        </p>
-
-                    </div>
-
-                </aside>
-
-            </div>
-
-        </section>
-
     </main>
 
     <!-- Footer -->
@@ -1324,7 +1220,7 @@
 
                 <p>
                     A volunteer-led youth coding program based at the
-                    Paterson YMCA.
+                    YMCA of Paterson.
                 </p>
 
             </div>

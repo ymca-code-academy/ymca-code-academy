@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     color: #18212f;
     background: #ffffff;
     line-height: 1.6;
@@ -9553,4 +9553,36 @@ textarea {
     border-radius: 18px;
     object-fit: cover;
     box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+/* ------------------------------
+   YMCA Code Academy Header Logo
+------------------------------ */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ymca-header-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-wordmark {
+    white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+    .ymca-header-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-wordmark {
+        white-space: normal;
+    }
 }
